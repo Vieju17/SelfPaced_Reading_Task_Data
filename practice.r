@@ -31,7 +31,8 @@ inner_bound <- Q1 - 1.5 * IQR
 upper_bound <- Q3 + 1.5 * IQR
 
 df_rt <- filter(select(df_clean, part_id, gender, age, lang_ca, lang_sp, lang_en, task, item_type, clause_type, number, segment, rt), task == "item" & item_type == "exp_item") %>%
-    filter(rt > inner_bound & rt < upper_bound)
+    filter(rt > inner_bound & rt < upper_bound) %>%
+    mutate(rt = log(rt, base = 2))
 summary(df_rt)
 
 df_acc <- filter(select(df_clean, part_id, gender, age, lang_ca, lang_sp, lang_en, task, item_type, clause_type, number, correct_answer, answer), task == "question") %>%
