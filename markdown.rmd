@@ -2,3 +2,10 @@
 output: reprex::reprex_document
 knit: reprex::reprex_render
 ---
+
+# Library Loading
+```{r}
+library(tidyverse)
+library(ggthemes)
+library(lme4)
+```
