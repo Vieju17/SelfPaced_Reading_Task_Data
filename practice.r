@@ -1,6 +1,6 @@
 # Library Import
-library("tidyverse")
-library("ggthemes")
+library(tidyverse)
+library(ggthemes)
 
 # Data Import
 df1 <- select(read.csv("./data/7co.csv"), part_id, gender, age, lang_ca, lang_sp, lang_en, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
