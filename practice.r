@@ -3,16 +3,18 @@ library(tidyverse)
 library(ggthemes)
 
 # Data Import
-sample <- read.csv("./data/0x0.csv")
-head(sample)
-
-df1 <- select(read.csv("./data/0x0.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
-df2 <- select(read.csv("./data/bzm.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
-df3 <- select(read.csv("./data/dj9.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
-df4 <- select(read.csv("./data/r5t.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
-df5 <- select(read.csv("./data/s62.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
-
-df_raw <- reduce(list(df1, df2, df3, df4, df5), rbind)
+df_raw <- reduce(list(
+    select(read.csv("./data/7yo.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/8vw.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/cdj.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/cz0.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/dgr.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/oeo.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/qpv.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/tds.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/vbv.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
+    select(read.csv("./data/kjd.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
+), rbind)
 summary(df_raw)
 
 # Data Cleaning
@@ -53,20 +55,40 @@ df_acc <- filter(select(df_clean, part_id, task, item_type, clause_type, number,
 summary(df_acc)
 
 # Data Analysis
-lm_rt <- lm(data = df_rt, rt ~ clause_type + number + segment)
+lm_rt <- lm(data = df_rt, rt ~ segment + clause_type + number)
 summary(lm_rt)
 
 lm_acc <- lm(data = df_acc, correct ~ clause_type + number)
 summary(lm_acc)
 
 # Data Visualization
-plot_rt <- df_rt %>%
+lmplot_rt <- df_rt %>%
+    ggplot(aes(x = segment, y = rt, color = clause_type)) +
+    geom_point() +
+    geom_smooth(method = "lm", se = FALSE) +
+    theme_calc(base_size = 12, base_family = "Verdana") +
+    theme(
+        plot.title = element_text(size = 20, face = "bold"),
+        legend.title = element_text(size = 15, face = "bold"),
+        legend.text = element_text(size = 12, face = "bold"),
+        axis.title = element_text(size = 15, face = "bold"),
+        axis.text = element_text(size = 12, face = "bold"),
+    ) +
+    labs(
+        title = "Reaction Time by Segment",
+        x = "Segment",
+        y = "Reaction Time (ms)",
+    )
+lmplot_rt
+
+boxplot_rt <- df_rt %>%
     ggplot(aes(
-        x = clause_type,
         y = rt,
-        color = number,
-        fill = number
+        color = segment,
+        fill = segment
     )) +
+    facet_wrap(~segment) +
+    aes(color = as.factor(segment), fill = as.factor(segment)) +
     geom_boxplot(
         notch = TRUE,
         notchwidth = 0.5,
@@ -76,7 +98,6 @@ plot_rt <- df_rt %>%
         linewidth = 1.5,
         alpha = 0.5,
     ) +
-    facet_wrap(~number) +
     theme_calc(base_size = 12, base_family = "Verdana") +
     theme(
         plot.title = element_text(size = 20, face = "bold"),
@@ -90,7 +111,7 @@ plot_rt <- df_rt %>%
         x = "Clause Type",
         y = "Reaction Time (ms)",
     )
-plot_rt
+boxplot_rt
 
 plot_acc <- df_acc %>%
     ggplot(aes(x = clause_type)) +
