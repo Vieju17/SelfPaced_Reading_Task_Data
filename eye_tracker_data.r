@@ -30,12 +30,14 @@ df_norm <- ggplot(df_clean, aes(x = Average_duration_of_fixations)) +
 df_norm
 
 # Linear Regression Model
-df_lm <- lmer(data = df_clean, Average_duration_of_fixations ~ clause_type + number + (1 | number))
+df_lm <- lmer(
+    data = df_clean,
+    Average_duration_of_fixations ~ clause_type + number + Stimulus + (1 | Stimulus)
+)
 summary(df_lm)
 
 # Data Visualization
-df_plot <- df_clean %>%
-    ggplot(aes(x = number, y = Average_duration_of_fixations)) +
-    geom_point() +
-    geom_smooth(method = lm, se = FALSE)
-df_plot
+df_boxplot <- df_clean %>%
+    ggplot(aes(x = clause_type, y = Average_duration_of_fixations)) +
+    geom_boxplot()
+df_boxplot
