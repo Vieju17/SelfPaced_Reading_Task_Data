@@ -4,16 +4,7 @@ library(ggthemes)
 
 # Data Import
 df_raw <- reduce(list(
-    select(read.csv("./data/7yo.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/8vw.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/cdj.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/cz0.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/dgr.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/oeo.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/qpv.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/tds.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/vbv.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer),
-    select(read.csv("./data/kjd.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
+    select(read.csv("./data/32.csv"), part_id, task, item_type, clause_type, number, segment, rt, correct_answer, answer)
 ), rbind)
 summary(df_raw)
 
@@ -21,7 +12,7 @@ summary(df_raw)
 df_clean <- df_raw[order(df_raw$part_id), ] %>% # Order by participant ID
     filter((task == "item" | task == "question") & segment != "s0" & item_type != "pr_item") %>% # Remove fixations and s0 segments
     mutate(rt = as.numeric(rt)) %>% # Making RTs a numeric value
-    mutate(clause_type = ifelse(clause_type == "sr", 1, 2)) %>% # Recoding clause type
+    mutate(clause_type = ifelse(clause_type == "sr", 0, 1)) %>% # Recoding clause type
     mutate(number = ifelse(number == "ss", 1,
         ifelse(number == "pp", 2,
             ifelse(number == "sp", 3, 4)
@@ -48,6 +39,10 @@ df_rt <- filter(select(df_clean, part_id, task, item_type, clause_type, number, 
     filter(rt > inner_bound & rt < upper_bound) %>%
     mutate(rt = log(rt, base = 2))
 summary(df_rt)
+
+ggplot(df_rt, aes(x = rt, y = clause_type)) +
+    geom_jitter(height = 0.05, alpha = 0.5) +
+    geom_smooth(method = "glm", method.args = list(family = "binomial"), se = FALSE)
 
 # Data Frame for Accuracy
 df_acc <- filter(select(df_clean, part_id, task, item_type, clause_type, number, correct_answer, answer), task == "question") %>%

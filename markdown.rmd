@@ -3,9 +3,46 @@ output: reprex::reprex_document
 knit: reprex::reprex_render
 ---
 
-# Library Loading
+# Data Analysis: Self-Paced Reading Task
+
+## Research Questions and Predictions
+
+**Research questions**:
+
+1. Are object relative clauses (ORs) parsed slower than subject relative clauses (SRs) by adult Spanish-English bilinguals?
+
+2. If so, does number mismatch between the two determiner phrases (DPs) facilitate their comprehension?
+
+**Predictions**:
+
+1. Adult Spanish-English bilinguals will show shorter reaction times (RTs) in SRs than in ORs.
+
+2. Number mismatch between the two DPs will result in shorter RTs in ORs than number match.
+
+## Data Analysis
+
+This is a step by step guide on how the data collected by the self-paced reading task has been analyzed.
+
+### 1. Library Loading
+
+The following libraries are imported:
+
+1. `tidyverse`, for cleaner data wrangling functions and access to other included packages, such as `ggplot2`.
+2. `ggthemes`, to access the theme `theme_calc()`.
+3. `lmerTest`, for more powerful mixed regression models.
+4. `gt`, for table creation functions.
+
 ```{r}
 library(tidyverse)
 library(ggthemes)
-library(lme4)
+library(lmerTest)
+library(gt)
+```
+
+### 2. Importing and Processing Data
+First, an example is taken to take a look at the state of the data and the existing variables. 
+
+```{r}
+df_example <- read.csv("./data/32.csv")
+summary(df_example)
 ```
