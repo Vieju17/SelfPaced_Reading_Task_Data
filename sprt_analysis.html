@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Analysis: Self-Paced Reading Task</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="sprt_analysis_files/libs/clipboard/clipboard.min.js"></script>
+<script src="sprt_analysis_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="sprt_analysis_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="sprt_analysis_files/libs/quarto-html/popper.min.js"></script>
+<script src="sprt_analysis_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="sprt_analysis_files/libs/quarto-html/anchor.min.js"></script>
+<link href="sprt_analysis_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="sprt_analysis_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="sprt_analysis_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="sprt_analysis_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="sprt_analysis_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Analysis: Self-Paced Reading Task</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="research-questions-and-predictions" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions-and-predictions">Research Questions and Predictions</h2>
+<p><strong>Research questions</strong>:</p>
+<ol type="1">
+<li><p>Are object relative clauses (ORs) parsed slower than subject relative clauses (SRs) by adult Spanish-English bilinguals?</p></li>
+<li><p>If so, does number mismatch between the two determiner phrases (DPs) facilitate their comprehension?</p></li>
+</ol>
+<p><strong>Predictions</strong>:</p>
+<ol type="1">
+<li><p>Adult Spanish-English bilinguals will show shorter reaction times (RTs) in SRs than in ORs.</p></li>
+<li><p>Number mismatch between the two DPs will result in shorter RTs in ORs than number match.</p></li>
+</ol>
+</section>
+<section id="rt-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="rt-data-analysis">RT Data Analysis</h2>
+<p>This is a step by step guide on how the data collected by the self-paced reading task has been analyzed.</p>
+<section id="library-loading" class="level3">
+<h3 class="anchored" data-anchor-id="library-loading">1. Library Loading</h3>
+<p>The following libraries are imported:</p>
+<ol type="1">
+<li><code>tidyverse</code>, for cleaner data wrangling functions and access to other included packages, such as <code>ggplot2</code>.</li>
+<li><code>ggthemes</code>, to access the theme <code>theme_calc()</code>.</li>
+<li><code>lmerTest</code>, for more powerful mixed regression models.</li>
+<li><code>gt</code>, for table creation functions.</li>
+<li><code>broom.mixed</code>, for converting mixed model output into data frames.</li>
+<li><code>IRdispplay</code>, for displaying tables in Jupyter Notebook</li>
+</ol>
+<div id="827dc08c" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="783">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom.mixed)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(IRdisplay)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="427112fa" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="784">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_calc</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">base_size =</span> <span class="dv">12</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">base_family =</span> <span class="st">"Times"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">theme</span>(</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="importing-and-processing-data" class="level3">
+<h3 class="anchored" data-anchor-id="importing-and-processing-data">2. Importing and Processing Data</h3>
+<section id="importing-questionnaire-data" class="level4">
+<h4 class="anchored" data-anchor-id="importing-questionnaire-data">Importing Questionnaire Data</h4>
+<div id="b634882c" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="785">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_part <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"./data/part_data.csv"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_part<span class="sc">$</span>part_name <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df_part<span class="sc">$</span>part_mail <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_part)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A data.frame: 6 x 17</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">X...part_id</th>
+<th data-quarto-table-cell-role="th" scope="col">part_experiment</th>
+<th data-quarto-table-cell-role="th" scope="col">part_age</th>
+<th data-quarto-table-cell-role="th" scope="col">part_lang</th>
+<th data-quarto-table-cell-role="th" scope="col">part_impaired.</th>
+<th data-quarto-table-cell-role="th" scope="col">part_abroad</th>
+<th data-quarto-table-cell-role="th" scope="col">part_certificate</th>
+<th data-quarto-table-cell-role="th" scope="col">part_cat_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_cat_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_spa_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_spa_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_onset_method</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_onset_time</th>
+<th data-quarto-table-cell-role="th" scope="col">Status</th>
+<th data-quarto-table-cell-role="th" scope="col">part_date</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">1</td>
+<td>22</td>
+<td><span style="white-space:pre-wrap">Pilot </span></td>
+<td>26 - 30</td>
+<td>Catalan, English, Spanish</td>
+<td>No</td>
+<td>No</td>
+<td><span style="white-space:pre-wrap">B2 (First) </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td>1h - 3h</td>
+<td>1h - 3h</td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>At school</td>
+<td>5</td>
+<td>Accepted</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">2</td>
+<td>21</td>
+<td><span style="white-space:pre-wrap">Pilot </span></td>
+<td>26 - 30</td>
+<td><span style="white-space:pre-wrap">Catalan, Spanish </span></td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>1h - 3h</td>
+<td>1h - 3h</td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>At school</td>
+<td>6</td>
+<td>Accepted</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">3</td>
+<td>20</td>
+<td><span style="white-space:pre-wrap">Pilot </span></td>
+<td>18 - 25</td>
+<td><span style="white-space:pre-wrap">Catalan, Spanish </span></td>
+<td>No</td>
+<td>No</td>
+<td><span style="white-space:pre-wrap">B2 (First) </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>At school</td>
+<td>8</td>
+<td>Accepted</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">4</td>
+<td>26</td>
+<td>Practicum</td>
+<td>18 - 25</td>
+<td><span style="white-space:pre-wrap">Catalan, Spanish </span></td>
+<td>No</td>
+<td>Yes</td>
+<td><span style="white-space:pre-wrap">C1 (Advanced) </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>1h - 3h</td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td>3h - 5h</td>
+<td>3h - 5h</td>
+<td>At school</td>
+<td>4</td>
+<td>Scheduled</td>
+<td>May 17, 2025 10:00 (GMT+2)</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">5</td>
+<td>34</td>
+<td>TFG</td>
+<td>18 - 25</td>
+<td>Catalan, Spanish</td>
+<td>No</td>
+<td>No</td>
+<td>B2 (First)</td>
+<td>1h - 3h</td>
+<td>1h - 3h</td>
+<td>3h - 5h</td>
+<td>3h - 5h</td>
+<td>3h - 5h</td>
+<td>3h - 5h</td>
+<td>At school</td>
+<td>6</td>
+<td>Scheduled</td>
+<td>May 7, 2025 11:00 (GMT+2)</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">6</td>
+<td>33</td>
+<td><span style="white-space:pre-wrap">TFG </span></td>
+<td>18 - 25</td>
+<td>Catalan, English, Spanish</td>
+<td>No</td>
+<td>Yes</td>
+<td><span style="white-space:pre-wrap">C1 (Advanced) </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>3h - 5h</td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">At home </span></td>
+<td>0</td>
+<td>Scheduled</td>
+<td>May 6, 2025 13:00 (GMT+2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="cleaning-questionnaire-data" class="level4">
+<h4 class="anchored" data-anchor-id="cleaning-questionnaire-data">Cleaning Questionnaire Data</h4>
+<div id="bb3a93e7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="786">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_part <span class="ot">&lt;-</span> df_part <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(part_experiment, X...part_id, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro, part_eng_onset_time) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_experiment =</span> <span class="fu">as.factor</span>(part_experiment),</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">X...part_id =</span> <span class="fu">as.factor</span>(X...part_id),</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_lang =</span> <span class="fu">as.factor</span>(part_lang),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_impaired. =</span> <span class="fu">as.factor</span>(part_impaired.),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_abroad =</span> <span class="fu">as.factor</span>(part_abroad),</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_certificate =</span> <span class="fu">as.factor</span>(part_certificate),</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_cat_exp =</span> <span class="fu">as.factor</span>(part_cat_exp),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_cat_pro =</span> <span class="fu">as.factor</span>(part_cat_pro),</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_spa_exp =</span> <span class="fu">as.factor</span>(part_spa_exp),</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_spa_pro =</span> <span class="fu">as.factor</span>(part_cat_pro),</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_eng_exp =</span> <span class="fu">as.factor</span>(part_eng_exp),</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_eng_pro =</span> <span class="fu">as.factor</span>(part_eng_pro)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(part_experiment <span class="sc">==</span> <span class="st">"TFG"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">part_id =</span> X...part_id) <span class="sc">%&gt;%</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">droplevels</span>()</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>df_part<span class="sc">$</span>part_experiment <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_part, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A data.frame: 5 x 12</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">part_id</th>
+<th data-quarto-table-cell-role="th" scope="col">part_lang</th>
+<th data-quarto-table-cell-role="th" scope="col">part_impaired.</th>
+<th data-quarto-table-cell-role="th" scope="col">part_abroad</th>
+<th data-quarto-table-cell-role="th" scope="col">part_certificate</th>
+<th data-quarto-table-cell-role="th" scope="col">part_cat_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_cat_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_spa_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_spa_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_onset_time</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">1</td>
+<td>34</td>
+<td>Catalan, Spanish</td>
+<td>No</td>
+<td>No</td>
+<td>B2 (First)</td>
+<td>1h - 3h</td>
+<td>1h - 3h</td>
+<td>3h - 5h</td>
+<td>1h - 3h</td>
+<td>3h - 5h</td>
+<td>3h - 5h</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">2</td>
+<td>33</td>
+<td>Catalan, English, Spanish</td>
+<td>No</td>
+<td>Yes</td>
+<td><span style="white-space:pre-wrap">C1 (Advanced) </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>3h - 5h</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">3</td>
+<td>32</td>
+<td><span style="white-space:pre-wrap">Catalan, Spanish </span></td>
+<td>No</td>
+<td>No</td>
+<td><span style="white-space:pre-wrap">C1 (Advanced) </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>3h - 5h</td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>1h - 3h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">4</td>
+<td>31</td>
+<td><span style="white-space:pre-wrap">Catalan, Spanish </span></td>
+<td>No</td>
+<td>No</td>
+<td><span style="white-space:pre-wrap">C1 (Advanced) </span></td>
+<td>1h - 3h</td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>3h - 5h</td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>1h - 3h</td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">5</td>
+<td>29</td>
+<td><span style="white-space:pre-wrap">Spanish </span></td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td><span style="white-space:pre-wrap">&lt; 1h </span></td>
+<td><span style="white-space:pre-wrap">&gt; 5h </span></td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="importing-task-data" class="level4">
+<h4 class="anchored" data-anchor-id="importing-task-data">Importing Task Data</h4>
+<p>First, an example is imported to inspect the data set’s variables and their data types.</p>
+<div id="bd086ab7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="787">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_example <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"./data/32.csv"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_example, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A data.frame: 10 x 18</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">rt</th>
+<th data-quarto-table-cell-role="th" scope="col">response</th>
+<th data-quarto-table-cell-role="th" scope="col">trial_type</th>
+<th data-quarto-table-cell-role="th" scope="col">trial_index</th>
+<th data-quarto-table-cell-role="th" scope="col">plugin_version</th>
+<th data-quarto-table-cell-role="th" scope="col">time_elapsed</th>
+<th data-quarto-table-cell-role="th" scope="col">part_id</th>
+<th data-quarto-table-cell-role="th" scope="col">task</th>
+<th data-quarto-table-cell-role="th" scope="col">item_number</th>
+<th data-quarto-table-cell-role="th" scope="col">item_type</th>
+<th data-quarto-table-cell-role="th" scope="col">segment</th>
+<th data-quarto-table-cell-role="th" scope="col">clause_type</th>
+<th data-quarto-table-cell-role="th" scope="col">number</th>
+<th data-quarto-table-cell-role="th" scope="col">stimulus</th>
+<th data-quarto-table-cell-role="th" scope="col">question</th>
+<th data-quarto-table-cell-role="th" scope="col">correct_answer</th>
+<th data-quarto-table-cell-role="th" scope="col">part_answer</th>
+<th data-quarto-table-cell-role="th" scope="col">correct</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">1</td>
+<td>2322825</td>
+<td>{"part_id":"32"}</td>
+<td>survey-html-form</td>
+<td>0</td>
+<td>2.0.0</td>
+<td>2325458</td>
+<td>32</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">2</td>
+<td><span style="white-space:pre-wrap"> 1536</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>2</td>
+<td>2.0.0</td>
+<td>2368979</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s0</td>
+<td>sr</td>
+<td>ss</td>
+<td><span style="white-space:pre-wrap">&lt;p class="trial-stimulus"&gt;_______ | ____ | _______ | _______ | ____&lt;/p&gt; </span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">3</td>
+<td><span style="white-space:pre-wrap"> 1222</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>3</td>
+<td>2.0.0</td>
+<td>2370201</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s1</td>
+<td>sr</td>
+<td>ss</td>
+<td><span style="white-space:pre-wrap">&lt;p class="trial-stimulus"&gt;The cat | ____ | _______ | _______ | ____&lt;/p&gt; </span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">4</td>
+<td><span style="white-space:pre-wrap"> 1408</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>4</td>
+<td>2.0.0</td>
+<td>2371610</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s2</td>
+<td>sr</td>
+<td>ss</td>
+<td><span style="white-space:pre-wrap">&lt;p class="trial-stimulus"&gt;_______ | that | _______ | _______ | ____&lt;/p&gt; </span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">5</td>
+<td><span style="white-space:pre-wrap"> 1249</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>5</td>
+<td>2.0.0</td>
+<td>2372859</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s3</td>
+<td>sr</td>
+<td>ss</td>
+<td><span style="white-space:pre-wrap">&lt;p class="trial-stimulus"&gt;_______ | ____ | watches | _______ | ____&lt;/p&gt; </span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">6</td>
+<td><span style="white-space:pre-wrap"> 1102</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>6</td>
+<td>2.0.0</td>
+<td>2373964</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s4</td>
+<td>sr</td>
+<td>ss</td>
+<td><span style="white-space:pre-wrap">&lt;p class="trial-stimulus"&gt;_______ | ____ | _______ | the dog | ____&lt;/p&gt; </span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">7</td>
+<td><span style="white-space:pre-wrap"> 2405</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>7</td>
+<td>2.0.0</td>
+<td>2376370</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s5</td>
+<td>sr</td>
+<td>ss</td>
+<td><span style="white-space:pre-wrap">&lt;p class="trial-stimulus"&gt;_______ | ____ | _______ | _______ | eats&lt;/p&gt; </span></td>
+<td>false</td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">8</td>
+<td><span style="white-space:pre-wrap"> 1727</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>9</td>
+<td>2.0.0</td>
+<td>2378602</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s0</td>
+<td>or</td>
+<td>ss</td>
+<td>&lt;p class="trial-stimulus"&gt;_________ | ____ | _________ | _____ | ______&lt;/p&gt;</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">9</td>
+<td><span style="white-space:pre-wrap"> 1111</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>10</td>
+<td>2.0.0</td>
+<td>2379714</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s1</td>
+<td>or</td>
+<td>ss</td>
+<td>&lt;p class="trial-stimulus"&gt;The horse | ____ | _________ | _____ | ______&lt;/p&gt;</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">10</td>
+<td><span style="white-space:pre-wrap"> 968</span></td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td>html-keyboard-response</td>
+<td>11</td>
+<td>2.0.0</td>
+<td>2380683</td>
+<td>32</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>s2</td>
+<td>or</td>
+<td>ss</td>
+<td>&lt;p class="trial-stimulus"&gt;_________ | that | _________ | _____ | ______&lt;/p&gt;</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Having done this, now we know which are the specific names of each variable, which ones are of interest and the data type of their values.</p>
+<p>We can now proceed to creating the full data set will all our participants’ data. This is done by importing them and passing them through the <code>reduce()</code> function, which combines all the CSV files into a single data set. The keyword <code>rbind</code> makes sure that the individual data sets are merged as additional rows.</p>
+<p>Note that only the following columns are selected:</p>
+<ul>
+<li><code>part_id</code>, for the participants’ ID number.</li>
+<li><code>task</code>, for the kind of trial, item or question.</li>
+<li><code>item_number</code>, for the items’ ID number.</li>
+<li><code>item_type</code>, for the type of item, experimental, practice or filler.</li>
+<li><code>clause_type</code>, for the type fo clause, OR or SR.</li>
+<li><code>number</code>, for the number condition, singular-singular (SS), plural-plural (PP), singular-plural (SP) or plural-singular (PS).</li>
+<li><code>segment</code>, for the segment ID.</li>
+<li><code>rt</code>, for the RTs.</li>
+<li><code>correct</code>, for the accuracy of their responses to question tasks.</li>
+</ul>
+<div id="5f8d76b9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="788">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_raw <span class="ot">&lt;-</span> <span class="fu">reduce</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="fu">read.csv</span>(<span class="st">"./data/29.csv"</span>), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct),</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="fu">read.csv</span>(<span class="st">"./data/31.csv"</span>), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct),</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="fu">read.csv</span>(<span class="st">"./data/32.csv"</span>), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    rbind</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_raw, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A data.frame: 10 x 9</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">part_id</th>
+<th data-quarto-table-cell-role="th" scope="col">task</th>
+<th data-quarto-table-cell-role="th" scope="col">item_number</th>
+<th data-quarto-table-cell-role="th" scope="col">item_type</th>
+<th data-quarto-table-cell-role="th" scope="col">clause_type</th>
+<th data-quarto-table-cell-role="th" scope="col">number</th>
+<th data-quarto-table-cell-role="th" scope="col">segment</th>
+<th data-quarto-table-cell-role="th" scope="col">rt</th>
+<th data-quarto-table-cell-role="th" scope="col">correct</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">1</td>
+<td>29</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2413859</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">2</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>sr</td>
+<td>ss</td>
+<td>s0</td>
+<td>2521</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">3</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>sr</td>
+<td>ss</td>
+<td>s1</td>
+<td>405</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">4</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>sr</td>
+<td>ss</td>
+<td>s2</td>
+<td>368</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">5</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>sr</td>
+<td>ss</td>
+<td>s3</td>
+<td>350</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">6</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>sr</td>
+<td>ss</td>
+<td>s4</td>
+<td>382</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">7</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>sr</td>
+<td>ss</td>
+<td>s5</td>
+<td>376</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">8</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>or</td>
+<td>ss</td>
+<td>s0</td>
+<td>1004</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">9</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>or</td>
+<td>ss</td>
+<td>s1</td>
+<td>414</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">10</td>
+<td>29</td>
+<td>item</td>
+<td>null</td>
+<td>pr_item</td>
+<td>or</td>
+<td>ss</td>
+<td>s2</td>
+<td>408</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="cleaning-task-data" class="level4">
+<h4 class="anchored" data-anchor-id="cleaning-task-data">Cleaning Task Data</h4>
+<p>After that, the data is cleaned.</p>
+<p>Firstly, the rows are ordered by the participants’ ID number with the <code>order()</code> function.</p>
+<p>Secondly, the observations are filtered using the <code>filter()</code> function, keeping only those that involve experimental items and excluding question tasks.</p>
+<p>Then, the function <code>mutate()</code> is used to transform the data types. <code>item_number</code> is transformed to numeric. The rest are transformed to factors.</p>
+<p>Additionally, a new column <code>matching</code> is created which groups match and mismatch conditions.</p>
+<p>Lastly, the <code>relocate()</code> function is used to make the <code>matching</code> column follow the <code>number</code> one.</p>
+<div id="1d5d9707" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="789">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_clean <span class="ot">&lt;-</span> df_raw <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    .[<span class="fu">order</span>(.<span class="sc">$</span>part_id), ] <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(.<span class="sc">$</span>item_type <span class="sc">==</span> <span class="st">"exp_item"</span> <span class="sc">&amp;</span> .<span class="sc">$</span>task <span class="sc">==</span> <span class="st">"item"</span> <span class="sc">&amp;</span> segment <span class="sc">!=</span> <span class="st">"s0"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">item_number =</span> <span class="fu">as.numeric</span>(item_number),</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">task =</span> <span class="fu">as.factor</span>(task),</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">item_type =</span> <span class="fu">as.factor</span>(item_type),</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">clause_type =</span> <span class="fu">factor</span>(clause_type, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"sr"</span>, <span class="st">"or"</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"SR"</span>, <span class="st">"OR"</span>)),</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">number =</span> <span class="fu">factor</span>(number, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"ss"</span>, <span class="st">"pp"</span>, <span class="st">"sp"</span>, <span class="st">"ps"</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"SS"</span>, <span class="st">"PP"</span>, <span class="st">"SP"</span>, <span class="st">"PS"</span>)),</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">matching =</span> <span class="fu">factor</span>(<span class="fu">ifelse</span>(number <span class="sc">==</span> <span class="st">"SS"</span> <span class="sc">|</span> number <span class="sc">==</span> <span class="st">"PP"</span>, <span class="st">"match"</span>, <span class="st">"mismatch"</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Match"</span>, <span class="st">"Mismatch"</span>)),</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">segment =</span> <span class="fu">factor</span>(segment, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"S1"</span>, <span class="st">"S2"</span>, <span class="st">"S3"</span>, <span class="st">"S4"</span>, <span class="st">"S5"</span>)),</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">part_id =</span> <span class="fu">as.factor</span>(part_id),</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(matching, <span class="at">.after =</span> number) <span class="sc">%&gt;%</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">droplevels</span>()</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df_clean)</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_clean, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code> part_id    task      item_number      item_type   clause_type number  
+ 29:160   item:480   Min.   :1.00   exp_item:480   SR:240      SS:120  
+ 31:160              1st Qu.:3.25                  OR:240      PP:120  
+ 32:160              Median :5.50                              SP:120  
+                     Mean   :5.00                              PS:120  
+                     3rd Qu.:7.25                                      
+                     Max.   :8.00                                      
+                                                                       
+     matching   segment       rt            correct   
+ Match   :240   S1:96   Min.   : 215.0   Min.   : NA  
+ Mismatch:240   S2:96   1st Qu.: 611.8   1st Qu.: NA  
+                S3:96   Median : 883.0   Median : NA  
+                S4:96   Mean   :1134.4   Mean   :NaN  
+                S5:96   3rd Qu.:1296.0   3rd Qu.: NA  
+                        Max.   :6609.0   Max.   : NA  
+                                         NA's   :480  </code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A data.frame: 10 x 10</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">part_id</th>
+<th data-quarto-table-cell-role="th" scope="col">task</th>
+<th data-quarto-table-cell-role="th" scope="col">item_number</th>
+<th data-quarto-table-cell-role="th" scope="col">item_type</th>
+<th data-quarto-table-cell-role="th" scope="col">clause_type</th>
+<th data-quarto-table-cell-role="th" scope="col">number</th>
+<th data-quarto-table-cell-role="th" scope="col">matching</th>
+<th data-quarto-table-cell-role="th" scope="col">segment</th>
+<th data-quarto-table-cell-role="th" scope="col">rt</th>
+<th data-quarto-table-cell-role="th" scope="col">correct</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">1</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td>Match</td>
+<td>S1</td>
+<td>719</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">2</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td>Match</td>
+<td>S2</td>
+<td>548</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">3</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td>Match</td>
+<td>S3</td>
+<td>800</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">4</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td>Match</td>
+<td>S4</td>
+<td>1176</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">5</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td>Match</td>
+<td>S5</td>
+<td>1303</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">6</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S1</td>
+<td>688</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">7</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S2</td>
+<td>607</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">8</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S3</td>
+<td>1071</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">9</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S4</td>
+<td>1832</td>
+<td>NA</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">10</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S5</td>
+<td>2768</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="normalizing" class="level4">
+<h4 class="anchored" data-anchor-id="normalizing">Normalizing</h4>
+<p>With the data looking like it should, now it is time to check for normal distribution. A plot is created that holds the data as it is.</p>
+<div id="e6d242f1" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="790">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>skewed_plot <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> rt)) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> ..density..)) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_function</span>(</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">fun =</span> dnorm,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> <span class="fu">mean</span>(df_clean<span class="sc">$</span>rt), <span class="at">sd =</span> <span class="fu">sd</span>(df_clean<span class="sc">$</span>rt)),</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">"blue"</span>,</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">linewidth =</span> <span class="dv">1</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>skewed_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<div class="ansi-escaped-output">
+<pre>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-9-output-2.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The first strategy to normalize the data is removing extreme values, or outliers, which might be causing the data to be left-skewed.</p>
+<div id="07e50733" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="791">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>q1 <span class="ot">&lt;-</span> <span class="fu">quantile</span>(df_clean<span class="sc">$</span>rt, <span class="fl">0.25</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>q3 <span class="ot">&lt;-</span> <span class="fu">quantile</span>(df_clean<span class="sc">$</span>rt, <span class="fl">0.75</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>iqr <span class="ot">&lt;-</span> q3 <span class="sc">-</span> q1</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>lower_limit <span class="ot">&lt;-</span> q1 <span class="sc">-</span> iqr <span class="sc">*</span> <span class="fl">1.5</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>upper_limit <span class="ot">&lt;-</span> q3 <span class="sc">+</span> iqr <span class="sc">*</span> <span class="fl">1.5</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>df_clean <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(.<span class="sc">$</span>rt <span class="sc">&gt;</span> lower_limit <span class="sc">&amp;</span> .<span class="sc">$</span>rt <span class="sc">&lt;</span> upper_limit)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>no_outlier_plot <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> rt)) <span class="sc">+</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> ..density..)) <span class="sc">+</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_function</span>(</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">fun =</span> dnorm,</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> <span class="fu">mean</span>(df_clean<span class="sc">$</span>rt), <span class="at">sd =</span> <span class="fu">sd</span>(df_clean<span class="sc">$</span>rt)),</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">"blue"</span>,</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">linewidth =</span> <span class="dv">1</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>no_outlier_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<div class="ansi-escaped-output">
+<pre>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-10-output-2.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>A second strategy that can be performed to further normalize the data is converting the continuos variable, RTs, into a logarithmic scale.</p>
+<div id="e118f74d" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="792">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_clean <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">rt =</span> <span class="fu">log</span>(rt))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>normal_plot <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> rt)) <span class="sc">+</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> ..density..)) <span class="sc">+</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_function</span>(</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">fun =</span> dnorm,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> <span class="fu">mean</span>(df_clean<span class="sc">$</span>rt), <span class="at">sd =</span> <span class="fu">sd</span>(df_clean<span class="sc">$</span>rt)),</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">"blue"</span>,</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">linewidth =</span> <span class="dv">1</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>normal_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<div class="ansi-escaped-output">
+<pre>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-11-output-2.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Checking normality.</p>
+<div id="89f4523c" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="793">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(df_clean<span class="sc">$</span>rt)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>qq_plot <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">sample =</span> rt)) <span class="sc">+</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_qq</span>() <span class="sc">+</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_qq_line</span>(<span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"QQ Plot of RTs"</span>, <span class="at">x =</span> <span class="st">"Theoretical Quantiles"</span>, <span class="at">y =</span> <span class="st">"Sample Quantiles"</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>qq_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  df_clean$rt
+W = 0.99009, p-value = 0.004922</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-12-output-2.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="merging-experiment-and-participant-data-sets" class="level4">
+<h4 class="anchored" data-anchor-id="merging-experiment-and-participant-data-sets">Merging Experiment and Participant Data Sets</h4>
+<div id="8c4889da" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="794">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df_part<span class="sc">$</span>part_experiment <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>df_merged <span class="ot">&lt;-</span> <span class="fu">merge</span>(df_clean, df_part, <span class="at">by =</span> <span class="st">"part_id"</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_merged, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A data.frame: 10 x 21</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">part_id</th>
+<th data-quarto-table-cell-role="th" scope="col">task</th>
+<th data-quarto-table-cell-role="th" scope="col">item_number</th>
+<th data-quarto-table-cell-role="th" scope="col">item_type</th>
+<th data-quarto-table-cell-role="th" scope="col">clause_type</th>
+<th data-quarto-table-cell-role="th" scope="col">number</th>
+<th data-quarto-table-cell-role="th" scope="col">matching</th>
+<th data-quarto-table-cell-role="th" scope="col">segment</th>
+<th data-quarto-table-cell-role="th" scope="col">rt</th>
+<th data-quarto-table-cell-role="th" scope="col">correct</th>
+<th data-quarto-table-cell-role="th" scope="col">...</th>
+<th data-quarto-table-cell-role="th" scope="col">part_impaired.</th>
+<th data-quarto-table-cell-role="th" scope="col">part_abroad</th>
+<th data-quarto-table-cell-role="th" scope="col">part_certificate</th>
+<th data-quarto-table-cell-role="th" scope="col">part_cat_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_cat_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_spa_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_spa_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_exp</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_pro</th>
+<th data-quarto-table-cell-role="th" scope="col">part_eng_onset_time</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">...</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;fct&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;int&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">1</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td><span style="white-space:pre-wrap">Match </span></td>
+<td>S1</td>
+<td>6.577861</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">2</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td><span style="white-space:pre-wrap">Match </span></td>
+<td>S2</td>
+<td>6.306275</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">3</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td><span style="white-space:pre-wrap">Match </span></td>
+<td>S3</td>
+<td>6.684612</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">4</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td><span style="white-space:pre-wrap">Match </span></td>
+<td>S4</td>
+<td>7.069874</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">5</td>
+<td>29</td>
+<td>item</td>
+<td>8</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td><span style="white-space:pre-wrap">Match </span></td>
+<td>S5</td>
+<td>7.172425</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">6</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S1</td>
+<td>6.533789</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">7</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S2</td>
+<td>6.408529</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">8</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S3</td>
+<td>6.976348</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="row">9</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>SP</td>
+<td>Mismatch</td>
+<td>S4</td>
+<td>7.513164</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th" scope="row">10</td>
+<td>29</td>
+<td>item</td>
+<td>4</td>
+<td>exp_item</td>
+<td>OR</td>
+<td>PP</td>
+<td><span style="white-space:pre-wrap">Match </span></td>
+<td>S1</td>
+<td>6.981935</td>
+<td>NA</td>
+<td>...</td>
+<td>No</td>
+<td>No</td>
+<td>C2 (Proficiency)</td>
+<td>&lt; 1h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>&lt; 1h</td>
+<td>&gt; 5h</td>
+<td>1h - 3h</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="rq1-clause-type-effects" class="level3">
+<h3 class="anchored" data-anchor-id="rq1-clause-type-effects">3. RQ1: Clause Type Effects</h3>
+<p>Three regression models are created using the <code>lmer()</code> function.</p>
+<ul>
+<li><code>lm_clause</code> checks for the correlation between RTs and clause type. Significantly higher RTs are expected for ORs.</li>
+<li><code>lm_matching</code> checks for the interaction between clause type and matching on RTs. A significant effect of mismatch condition is expected in ORs but not in SRs.</li>
+<li><code>lm_segment</code> checks for the interaction between clause type and segment on RTs. A significant effect of clause type is expected in segments 3, 4 and 5. The rest are filtered out.</li>
+</ul>
+<section id="regression-model" class="level4">
+<h4 class="anchored" data-anchor-id="regression-model">Regression Model</h4>
+<div id="8f3c03e8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="795">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>lm_clause <span class="ot">&lt;-</span> <span class="fu">lmer</span>(<span class="at">data =</span> df_merged, rt <span class="sc">~</span> clause_type <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> part_eng_pro) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> part_eng_exp))</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm_clause)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: rt ~ clause_type + (1 | part_eng_pro) + (1 | part_eng_exp)
+   Data: df_merged
+
+REML criterion at convergence: 544.4
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.55242 -0.70771 -0.09349  0.59322  2.59498 
+
+Random effects:
+ Groups       Name        Variance Std.Dev.
+ part_eng_pro (Intercept) 0.01954  0.1398  
+ part_eng_exp (Intercept) 0.05972  0.2444  
+ Residual                 0.19710  0.4440  
+Number of obs: 436, groups:  part_eng_pro, 2; part_eng_exp, 2
+
+Fixed effects:
+               Estimate Std. Error        df t value Pr(&gt;|t|)   
+(Intercept)     6.57915    0.20174   1.55175  32.612  0.00346 **
+clause_typeOR   0.11003    0.04259 431.92416   2.584  0.01011 * 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+claus_typOR -0.100</code></pre>
+</div>
+</div>
+</section>
+<section id="table" class="level4">
+<h4 class="anchored" data-anchor-id="table">Table</h4>
+<div id="30f87591" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="796">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>lm_clause_tidy <span class="ot">&lt;-</span> lm_clause <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tidy</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(effect <span class="sc">==</span> <span class="st">"fixed"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">p.value =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&lt;</span> <span class="fl">0.001</span> <span class="sc">~</span> <span class="st">"&lt; 0.001"</span>,</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&lt;</span> <span class="fl">0.01</span> <span class="sc">~</span> <span class="st">"&lt; 0.01"</span>,</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&lt;</span> <span class="fl">0.05</span> <span class="sc">~</span> <span class="st">"&lt; 0.05"</span>,</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&gt;</span> <span class="fl">0.05</span> <span class="sc">~</span> <span class="st">"&gt; 0.05"</span>,</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">term =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"(Intercept)"</span> <span class="sc">~</span> <span class="st">"SR (Intercept)"</span>,</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR"</span> <span class="sc">~</span> <span class="st">"OR"</span>,</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"segmentS2"</span> <span class="sc">~</span> <span class="st">"S2"</span>,</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"segmentS3"</span> <span class="sc">~</span> <span class="st">"S3"</span>,</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"segmentS4"</span> <span class="sc">~</span> <span class="st">"S4"</span>,</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"segmentS5"</span> <span class="sc">~</span> <span class="st">"S5"</span>,</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"segmentS2"</span> <span class="sc">~</span> <span class="st">"S2"</span>,</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR:segmentS2"</span> <span class="sc">~</span> <span class="st">"SR * S2"</span>,</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR:segmentS3"</span> <span class="sc">~</span> <span class="st">"SR * S3"</span>,</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR:segmentS4"</span> <span class="sc">~</span> <span class="st">"SR * S4"</span>,</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR:segmentS5"</span> <span class="sc">~</span> <span class="st">"SR * S5"</span>,</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">code =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&lt; 0.001"</span> <span class="sc">~</span> <span class="st">"***"</span>,</span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&lt; 0.01"</span> <span class="sc">~</span> <span class="st">"**"</span>,</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&lt; 0.05"</span> <span class="sc">~</span> <span class="st">"*"</span>,</span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&gt; 0.05"</span> <span class="sc">~</span> <span class="st">" "</span></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a>lm_clause_tidy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A tibble: 2 x 9</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">effect</th>
+<th data-quarto-table-cell-role="th" scope="col">group</th>
+<th data-quarto-table-cell-role="th" scope="col">term</th>
+<th data-quarto-table-cell-role="th" scope="col">estimate</th>
+<th data-quarto-table-cell-role="th" scope="col">std.error</th>
+<th data-quarto-table-cell-role="th" scope="col">statistic</th>
+<th data-quarto-table-cell-role="th" scope="col">df</th>
+<th data-quarto-table-cell-role="th" scope="col">p.value</th>
+<th data-quarto-table-cell-role="th" scope="col">code</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>fixed</td>
+<td>NA</td>
+<td>SR (Intercept)</td>
+<td>6.5791499</td>
+<td>0.20174159</td>
+<td>32.611768</td>
+<td><span style="white-space:pre-wrap"> 1.551751</span></td>
+<td>&lt; 0.01</td>
+<td>**</td>
+</tr>
+<tr class="even">
+<td>fixed</td>
+<td>NA</td>
+<td><span style="white-space:pre-wrap">OR </span></td>
+<td>0.1100343</td>
+<td>0.04258973</td>
+<td>2.583588</td>
+<td>431.924165</td>
+<td>&lt; 0.05</td>
+<td>*</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="471e0bf5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="797">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>lm_clause_table <span class="ot">&lt;-</span> lm_clause_tidy <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cols_hide</span>(<span class="at">columns =</span> <span class="fu">c</span>(effect, group, df)) <span class="sc">%&gt;%</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_options</span>(</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.font.names =</span> <span class="st">"Times"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.font.size =</span> <span class="dv">12</span>,</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.width =</span> <span class="dv">600</span>,</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.title.font.size =</span> <span class="dv">12</span>,</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.subtitle.font.size =</span> <span class="dv">12</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_header</span>(</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="fu">md</span>(<span class="st">"**Mixed Model Results**"</span>),</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">subtitle =</span> <span class="fu">md</span>(<span class="st">"**Clause Type**"</span>)</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cols_label</span>(</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">term =</span> <span class="st">"Condition"</span>,</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">estimate =</span> <span class="st">"Estimate"</span>,</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">std.error =</span> <span class="st">"Std. Error"</span>,</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">statistic =</span> <span class="fu">md</span>(<span class="st">"*t*-value"</span>),</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">p.value =</span> <span class="fu">md</span>(<span class="st">"*p*-value"</span>),</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">code =</span> <span class="st">"Signif. Code"</span></span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fmt_number</span>(</span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">columns =</span> <span class="fu">c</span>(term, estimate, std.error, statistic, p.value),</span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>        <span class="at">decimals =</span> <span class="dv">3</span></span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a><span class="fu">display_html</span>(<span class="fu">as_raw_html</span>(lm_clause_table))</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a><span class="fu">gtsave</span>(lm_clause_table, <span class="at">filename =</span> <span class="st">"clause_type_table.png"</span>, <span class="at">path =</span> <span class="st">"plots/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="wjltxpbirt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  
+  
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false" width="600" data-bgcolor="#FFFFFF">
+<thead style="border-style: none;">
+<tr class="gt_heading header" style="border-style: none; background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;" data-bgcolor="#FFFFFF" data-align="center">
+<th colspan="6" class="gt_heading gt_title gt_font_normal" style="text-align: center; border-style: none; color: #333333; font-size: 12px; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-width: 0; background-color: #FFFFFF; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; font-weight: normal;" data-bgcolor="#FFFFFF"><span class="gt_from_md"><strong>Mixed Model Results</strong></span></th>
+</tr>
+<tr class="gt_heading even" style="border-style: none; background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;" data-bgcolor="#FFFFFF" data-align="center">
+<th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="text-align: center; border-style: none; color: #333333; font-size: 12px; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; background-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; font-weight: normal;" data-bgcolor="#FFFFFF"><span class="gt_from_md"><strong>Clause Type</strong></span></th>
+</tr>
+<tr class="gt_col_headings header" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
+<th id="term" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col" style="text-align: left; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom">Condition</th>
+<th id="estimate" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom">Estimate</th>
+<th id="std.error" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom">Std. Error</th>
+<th id="statistic" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom"><span class="gt_from_md"><em>t</em>-value</span></th>
+<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col" style="text-align: left; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom"><span class="gt_from_md"><em>p</em>-value</span></th>
+<th id="code" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom">Signif. Code</th>
+</tr>
+</thead>
+<tbody class="gt_table_body" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3;">
+<tr class="odd" style="border-style: none;">
+<td class="gt_row gt_left" headers="term" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">SR (Intercept)</td>
+<td class="gt_row gt_right" headers="estimate" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">6.579</td>
+<td class="gt_row gt_right" headers="std.error" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.202</td>
+<td class="gt_row gt_right" headers="statistic" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">32.612</td>
+<td class="gt_row gt_left" headers="p.value" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">&lt; 0.01</td>
+<td class="gt_row gt_right" headers="code" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">**</td>
+</tr>
+<tr class="even" style="border-style: none;">
+<td class="gt_row gt_left" headers="term" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">OR</td>
+<td class="gt_row gt_right" headers="estimate" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.110</td>
+<td class="gt_row gt_right" headers="std.error" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.043</td>
+<td class="gt_row gt_right" headers="statistic" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">2.584</td>
+<td class="gt_row gt_left" headers="p.value" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">&lt; 0.05</td>
+<td class="gt_row gt_right" headers="code" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">*</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>file:////var/folders/l7/2mdpz2wn395f0w8khq_kf29h0000gn/T//Rtmp7sUZnC/file88a61fdf1ab.html screenshot completed
+</code></pre>
+</div>
+</div>
+</section>
+<section id="plots" class="level4">
+<h4 class="anchored" data-anchor-id="plots">Plots</h4>
+<div id="3faae421" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="798">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>lm_clause_plot <span class="ot">&lt;-</span> df_merged <span class="sc">%&gt;%</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">exp</span>(rt), <span class="at">x =</span> clause_type, <span class="at">color =</span> clause_type, <span class="at">fill =</span> clause_type)) <span class="sc">+</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>, <span class="at">staplewidth =</span> <span class="fl">0.5</span>, <span class="at">notch =</span> <span class="cn">TRUE</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Clause Type Effects on RTs"</span>,</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Clause Type"</span>,</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Reaction Times (ms)"</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>lm_clause_plot</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="st">"lm_clause_plot.svg"</span>, <span class="at">path =</span> <span class="st">"plots/"</span>, <span class="at">height =</span> <span class="dv">5</span>, <span class="at">width =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-17-output-1.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="08d616b8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="799">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>lm_clause_segment_plot <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">exp</span>(rt), <span class="at">x =</span> segment, <span class="at">color =</span> clause_type, <span class="at">group =</span> clause_type)) <span class="sc">+</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"line"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"point"</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">stroke =</span> <span class="dv">1</span>, <span class="at">fill =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Clause Type Effects on RTs by Segment"</span>,</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Segments"</span>,</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Reaction Times (ms)"</span>,</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">"Clause Type"</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>lm_clause_segment_plot</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="st">"lm_clause_segment_plot.svg"</span>, <span class="at">path =</span> <span class="st">"plots/"</span>, <span class="at">height =</span> <span class="dv">5</span>, <span class="at">width =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-18-output-1.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="rq2-number-effects" class="level3">
+<h3 class="anchored" data-anchor-id="rq2-number-effects">4. RQ2: Number Effects</h3>
+<section id="regression-model-1" class="level4">
+<h4 class="anchored" data-anchor-id="regression-model-1">Regression Model</h4>
+<div id="41a101c2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="800">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>lm_number <span class="ot">&lt;-</span> <span class="fu">lmer</span>(<span class="at">data =</span> df_merged, rt <span class="sc">~</span> number <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> part_eng_exp) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> part_eng_pro))</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: rt ~ number + (1 | part_eng_exp) + (1 | part_eng_pro)
+   Data: df_merged
+
+REML criterion at convergence: 557.7
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.59194 -0.72759 -0.06875  0.59979  2.71801 
+
+Random effects:
+ Groups       Name        Variance Std.Dev.
+ part_eng_exp (Intercept) 0.05967  0.2443  
+ part_eng_pro (Intercept) 0.01920  0.1386  
+ Residual                 0.20067  0.4480  
+Number of obs: 436, groups:  part_eng_exp, 2; part_eng_pro, 2
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(&gt;|t|)   
+(Intercept)   6.61916    0.20372   1.61888  32.492  0.00285 **
+numberPP      0.04135    0.06083 429.92481   0.680  0.49702   
+numberSP      0.01931    0.06084 429.95182   0.317  0.75104   
+numberPS     -0.01125    0.06069 429.92214  -0.185  0.85304   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+         (Intr) nmbrPP nmbrSP
+numberPP -0.150              
+numberSP -0.148  0.502       
+numberPS -0.150  0.504  0.503</code></pre>
+</div>
+</div>
+</section>
+<section id="table-1" class="level4">
+<h4 class="anchored" data-anchor-id="table-1">Table</h4>
+<div id="0af3053e" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="801">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>lm_number_tidy <span class="ot">&lt;-</span> lm_number <span class="sc">%&gt;%</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tidy</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(effect <span class="sc">==</span> <span class="st">"fixed"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">p.value =</span> <span class="fu">case_when</span>(</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&lt;</span> <span class="fl">0.001</span> <span class="sc">~</span> <span class="st">"&lt; 0.001"</span>,</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&lt;</span> <span class="fl">0.01</span> <span class="sc">~</span> <span class="st">"&lt; 0.01"</span>,</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&lt;</span> <span class="fl">0.05</span> <span class="sc">~</span> <span class="st">"&lt; 0.05"</span>,</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">&gt;</span> <span class="fl">0.05</span> <span class="sc">~</span> <span class="st">"&gt; 0.05"</span>,</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">term =</span> <span class="fu">case_when</span>(</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"(Intercept)"</span> <span class="sc">~</span> <span class="st">"SS (Intercept)"</span>,</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR"</span> <span class="sc">~</span> <span class="st">"OR"</span>,</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"numberPP"</span> <span class="sc">~</span> <span class="st">"PP"</span>,</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"numberSP"</span> <span class="sc">~</span> <span class="st">"SP"</span>,</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"numberPS"</span> <span class="sc">~</span> <span class="st">"PS"</span>,</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR:numberPP"</span> <span class="sc">~</span> <span class="st">"OR * PP"</span>,</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR:numberSP"</span> <span class="sc">~</span> <span class="st">"OR * SP"</span>,</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>            term <span class="sc">==</span> <span class="st">"clause_typeOR:numberPS"</span> <span class="sc">~</span> <span class="st">"OR * PS"</span>,</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">code =</span> <span class="fu">case_when</span>(</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&lt; 0.001"</span> <span class="sc">~</span> <span class="st">"***"</span>,</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&lt; 0.01"</span> <span class="sc">~</span> <span class="st">"**"</span>,</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&lt; 0.05"</span> <span class="sc">~</span> <span class="st">"*"</span>,</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>            p.value <span class="sc">==</span> <span class="st">"&gt; 0.05"</span> <span class="sc">~</span> <span class="st">" "</span></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>lm_number_tidy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>A tibble: 4 x 9</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">effect</th>
+<th data-quarto-table-cell-role="th" scope="col">group</th>
+<th data-quarto-table-cell-role="th" scope="col">term</th>
+<th data-quarto-table-cell-role="th" scope="col">estimate</th>
+<th data-quarto-table-cell-role="th" scope="col">std.error</th>
+<th data-quarto-table-cell-role="th" scope="col">statistic</th>
+<th data-quarto-table-cell-role="th" scope="col">df</th>
+<th data-quarto-table-cell-role="th" scope="col">p.value</th>
+<th data-quarto-table-cell-role="th" scope="col">code</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;dbl&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+<th data-quarto-table-cell-role="th" scope="col">&lt;chr&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>fixed</td>
+<td>NA</td>
+<td>SS (Intercept)</td>
+<td>6.61915927</td>
+<td>0.20371527</td>
+<td>32.4922100</td>
+<td><span style="white-space:pre-wrap"> 1.618882</span></td>
+<td>&lt; 0.01</td>
+<td>**</td>
+</tr>
+<tr class="even">
+<td>fixed</td>
+<td>NA</td>
+<td><span style="white-space:pre-wrap">PP </span></td>
+<td>0.04135171</td>
+<td>0.06083255</td>
+<td>0.6797629</td>
+<td>429.924811</td>
+<td>&gt; 0.05</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+</tr>
+<tr class="odd">
+<td>fixed</td>
+<td>NA</td>
+<td><span style="white-space:pre-wrap">SP </span></td>
+<td>0.01931445</td>
+<td>0.06083933</td>
+<td>0.3174665</td>
+<td>429.951822</td>
+<td>&gt; 0.05</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+</tr>
+<tr class="even">
+<td>fixed</td>
+<td>NA</td>
+<td><span style="white-space:pre-wrap">PS </span></td>
+<td>-0.01124877</td>
+<td>0.06068724</td>
+<td>-0.1853565</td>
+<td>429.922138</td>
+<td>&gt; 0.05</td>
+<td><span style="white-space:pre-wrap"> </span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="df9d3aa7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="805">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>lm_number_table <span class="ot">&lt;-</span> lm_number_tidy <span class="sc">%&gt;%</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cols_hide</span>(<span class="at">columns =</span> <span class="fu">c</span>(effect, group, df)) <span class="sc">%&gt;%</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_options</span>(</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.font.names =</span> <span class="st">"Times"</span>,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.font.size =</span> <span class="dv">12</span>,</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.width =</span> <span class="dv">600</span>,</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.title.font.size =</span> <span class="dv">12</span>,</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.subtitle.font.size =</span> <span class="dv">12</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_header</span>(</span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="fu">md</span>(<span class="st">"**Mixed Model Results**"</span>),</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">subtitle =</span> <span class="fu">md</span>(<span class="st">"**Number Condition**"</span>)</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cols_label</span>(</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">term =</span> <span class="st">"Condition"</span>,</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">estimate =</span> <span class="st">"Estimate"</span>,</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">std.error =</span> <span class="st">"Std. Error"</span>,</span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">statistic =</span> <span class="fu">md</span>(<span class="st">"*t*-value"</span>),</span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">p.value =</span> <span class="fu">md</span>(<span class="st">"*p*-value"</span>),</span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">code =</span> <span class="st">"Signif. Code"</span></span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fmt_number</span>(</span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">columns =</span> <span class="fu">c</span>(term, estimate, std.error, statistic, p.value),</span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>        <span class="at">decimals =</span> <span class="dv">3</span></span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a><span class="fu">display_html</span>(<span class="fu">as_raw_html</span>(lm_number_table))</span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a><span class="fu">gtsave</span>(lm_number_table, <span class="at">filename =</span> <span class="st">"number_table.png"</span>, <span class="at">path =</span> <span class="st">"plots/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="hcmbledfpt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  
+  
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false" width="600" data-bgcolor="#FFFFFF">
+<thead style="border-style: none;">
+<tr class="gt_heading header" style="border-style: none; background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;" data-bgcolor="#FFFFFF" data-align="center">
+<th colspan="6" class="gt_heading gt_title gt_font_normal" style="text-align: center; border-style: none; color: #333333; font-size: 12px; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-width: 0; background-color: #FFFFFF; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; font-weight: normal;" data-bgcolor="#FFFFFF"><span class="gt_from_md"><strong>Mixed Model Results</strong></span></th>
+</tr>
+<tr class="gt_heading even" style="border-style: none; background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;" data-bgcolor="#FFFFFF" data-align="center">
+<th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="text-align: center; border-style: none; color: #333333; font-size: 12px; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; background-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; font-weight: normal;" data-bgcolor="#FFFFFF"><span class="gt_from_md"><strong>Number Condition</strong></span></th>
+</tr>
+<tr class="gt_col_headings header" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
+<th id="term" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col" style="text-align: left; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom">Condition</th>
+<th id="estimate" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom">Estimate</th>
+<th id="std.error" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom">Std. Error</th>
+<th id="statistic" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom"><span class="gt_from_md"><em>t</em>-value</span></th>
+<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col" style="text-align: left; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom"><span class="gt_from_md"><em>p</em>-value</span></th>
+<th id="code" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col" style="text-align: right; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-bgcolor="#FFFFFF" data-valign="bottom">Signif. Code</th>
+</tr>
+</thead>
+<tbody class="gt_table_body" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3;">
+<tr class="odd" style="border-style: none;">
+<td class="gt_row gt_left" headers="term" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">SS (Intercept)</td>
+<td class="gt_row gt_right" headers="estimate" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">6.619</td>
+<td class="gt_row gt_right" headers="std.error" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.204</td>
+<td class="gt_row gt_right" headers="statistic" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">32.492</td>
+<td class="gt_row gt_left" headers="p.value" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">&lt; 0.01</td>
+<td class="gt_row gt_right" headers="code" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">**</td>
+</tr>
+<tr class="even" style="border-style: none;">
+<td class="gt_row gt_left" headers="term" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">PP</td>
+<td class="gt_row gt_right" headers="estimate" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.041</td>
+<td class="gt_row gt_right" headers="std.error" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.061</td>
+<td class="gt_row gt_right" headers="statistic" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.680</td>
+<td class="gt_row gt_left" headers="p.value" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">&gt; 0.05</td>
+<td class="gt_row gt_right" headers="code" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle"></td>
+</tr>
+<tr class="odd" style="border-style: none;">
+<td class="gt_row gt_left" headers="term" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">SP</td>
+<td class="gt_row gt_right" headers="estimate" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.019</td>
+<td class="gt_row gt_right" headers="std.error" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.061</td>
+<td class="gt_row gt_right" headers="statistic" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.317</td>
+<td class="gt_row gt_left" headers="p.value" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">&gt; 0.05</td>
+<td class="gt_row gt_right" headers="code" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle"></td>
+</tr>
+<tr class="even" style="border-style: none;">
+<td class="gt_row gt_left" headers="term" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">PS</td>
+<td class="gt_row gt_right" headers="estimate" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">−0.011</td>
+<td class="gt_row gt_right" headers="std.error" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">0.061</td>
+<td class="gt_row gt_right" headers="statistic" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle">−0.185</td>
+<td class="gt_row gt_left" headers="p.value" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden;" data-valign="middle">&gt; 0.05</td>
+<td class="gt_row gt_right" headers="code" style="text-align: right; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-variant-numeric: tabular-nums;" data-valign="middle"></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>file:////var/folders/l7/2mdpz2wn395f0w8khq_kf29h0000gn/T//Rtmp7sUZnC/file88acb91cdc.html screenshot completed
+</code></pre>
+</div>
+</div>
+</section>
+<section id="plots-1" class="level4">
+<h4 class="anchored" data-anchor-id="plots-1">Plots</h4>
+<div id="83324ae7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>lm_number_plot <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">exp</span>(rt), <span class="at">x =</span> matching, <span class="at">color =</span> number)) <span class="sc">+</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>, <span class="at">staplewidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(df_clean<span class="sc">$</span>clause_type) <span class="sc">+</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Number Effects on RTs"</span>,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Number Condition"</span>,</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Reaction Times (ms)"</span>,</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">"Number</span><span class="sc">\n</span><span class="st">Condition"</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>lm_number_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-22-output-1.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="74c42060" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;r&quot;}}" data-execution_count="804">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>lm_number_plot2 <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">exp</span>(rt), <span class="at">x =</span> segment, <span class="at">color =</span> number, <span class="at">group =</span> number)) <span class="sc">+</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"line"</span>) <span class="sc">+</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"point"</span>) <span class="sc">+</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(df_clean<span class="sc">$</span>clause_type) <span class="sc">+</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Number Effect on RTs by Segment"</span>,</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Segments"</span>,</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Reaction Times (ms)"</span>,</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">"Number</span><span class="sc">\n</span><span class="st">Condition"</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>lm_number_plot2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sprt_analysis_files/figure-html/cell-23-output-1.png" width="420" height="420" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
