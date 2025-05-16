@@ -378,7 +378,7 @@ lm_number_table
 gtsave(lm_number_table, filename = "number_table.png", path = tables_path)
 ```
 
-#### Number Effects Plotx
+#### Number Effects Plot
 ```{r Number Effects Plot}
 lm_number_plot <- df_merged %>%
     filter(clause_type == "OR") %>%
