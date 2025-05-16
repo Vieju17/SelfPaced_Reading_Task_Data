@@ -1,0 +1,443 @@
+---
+title: "Self-Paced Reading Task"
+output: 
+    html_notebook: 
+        toc: true
+        toc_float: true
+--- 
+
+## Data Analysis
+
+### 0. Setting Up
+#### Loading Libraries
+```{r Importing Libraries, results=FALSE, message=FALSE}
+library(tidyverse)
+library(lmerTest)
+library(ggthemes)
+library(gt)
+library(broom.mixed)
+```
+
+#### Color Variables
+```{r Setting Color Variables}
+accent_color <- "#354c7c"
+secondary_color <- "#354b7c2b"
+```
+
+#### Path Variables
+```{r Setting Path Variables}
+tables_path <- "./images/tables/"
+plots_path <- "./images/plots/"
+```
+
+#### Setting DefaultPlot Theme
+```{r Setting Default Plot Theme}
+theme_set(
+    theme_calc(
+        base_size = 12,
+        base_family = "Times"
+    ) +
+        theme(
+            plot.title = element_text(size = 12, face = "bold", margin = margin(b = 10)),
+            plot.subtitle = element_text(size = 11, face = "bold"),
+            plot.background = element_rect(linewidth = 0),
+            strip.background = element_rect(fill = accent_color, color = accent_color),
+            strip.text = element_text(color = "white", face = "bold"),
+            axis.title.x = element_text(face = "bold", margin = margin(t = 10)),
+            axis.title.y = element_text(face = "bold", margin = margin(r = 10)),
+            axis.line = element_line(color = accent_color, linewidth = 1),
+            axis.ticks = element_blank(),
+            legend.title = element_text(face = "bold")
+        )
+)
+```
+
+### 1. Participant Data
+#### Importing Participant Data
+```{r Importing Participant Data}
+df_part <- read.csv("./data/part_data.csv")
+df_part$part_name <- NULL
+df_part$part_mail <- NULL
+head(df_part)
+```
+
+#### Cleaning Participant Data
+```{r Cleaning Participant Data}
+df_part <- df_part %>%
+    select(part_experiment, part_id, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro, part_eng_onset_time) %>%
+    mutate(
+        across(
+            c(part_experiment, part_id, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro),
+            factor
+        )
+    ) %>%
+    filter(part_experiment == "TFG") %>%
+    rename(part_id = part_id) %>%
+    droplevels()
+
+df_part$part_experiment <- NULL
+
+summary(df_part)
+```
+
+### 2. Task Data
+#### Importing Task Data
+```{r Importing Example of Task Data}
+df_example <- read.csv("./data/32.csv")
+head(df_example)
+```
+
+```{r Importing Task Data}
+df_raw <- reduce(
+    list(
+        select(read.csv("./data/29.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt),
+        select(read.csv("./data/31.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt),
+        select(read.csv("./data/32.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt),
+        select(read.csv("./data/37.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt)
+    ),
+    rbind
+)
+glimpse(df_raw)
+```
+
+#### Cleaning Task Data
+```{r Cleaning Task Data}
+df_clean <- df_raw %>%
+    .[order(.$part_id), ] %>%
+    filter(.$item_type == "exp_item" & .$task == "item" & segment != "s0") %>%
+    mutate(
+        across(
+            c(task, item_type, part_id),
+            factor
+        ),
+        item_number = as.numeric(item_number),
+        clause_type = factor(clause_type, levels = c("sr", "or"), labels = c("SR", "OR")),
+        number = factor(number, levels = c("ss", "pp", "sp", "ps"), labels = c("SS", "PP", "SP", "PS")),
+        matching = factor(ifelse(number == "SS" | number == "PP", "match", "mismatch"), labels = c("Match", "Mismatch")),
+        segment = factor(segment, labels = c("S1", "S2", "S3", "S4", "S5")),
+    ) %>%
+    relocate(matching, .after = number) %>%
+    droplevels()
+
+glimpse(df_clean)
+```
+
+#### Normalizing Task Data
+```{r Normality Check}
+skewed_plot <- df_clean %>%
+    ggplot(aes(x = rt)) +
+    geom_histogram(aes(y = ..density..)) +
+    stat_function(
+        fun = dnorm,
+        args = list(mean = mean(df_clean$rt), sd = sd(df_clean$rt)),
+        linewidth = 1,
+        color = accent_color
+    )
+skewed_plot
+```
+
+```{r Logged Data}
+df_clean <- df_clean %>%
+    mutate(rt = log(rt))
+
+normal_plot <- df_clean %>%
+    ggplot(aes(x = rt)) +
+    geom_histogram(aes(y = ..density..)) +
+    stat_function(
+        fun = dnorm,
+        args = list(mean = mean(df_clean$rt), sd = sd(df_clean$rt)),
+        linewidth = 1,
+        color = accent_color
+    )
+normal_plot
+```
+
+```{r Outlier Removal}
+q1 <- quantile(df_clean$rt, 0.25)
+q3 <- quantile(df_clean$rt, 0.75)
+iqr <- q3 - q1
+lower_limit <- q1 - iqr * 1.5
+upper_limit <- q3 + iqr * 1.5
+
+df_clean <- df_clean %>%
+    filter(.$rt > lower_limit & .$rt < upper_limit)
+
+no_outlier_plot <- df_clean %>%
+    ggplot(aes(x = rt)) +
+    geom_histogram(aes(y = ..density..)) +
+    stat_function(
+        fun = dnorm,
+        args = list(mean = mean(df_clean$rt), sd = sd(df_clean$rt)),
+        linewidth = 1,
+        color = accent_color
+    )
+no_outlier_plot
+```
+
+```{r Normality Test}
+shapiro.test(df_clean$rt)
+
+qq_plot <- df_clean %>%
+    ggplot(aes(sample = rt)) +
+    stat_qq() +
+    stat_qq_line(color = accent_color, linewidth = 1) +
+    labs(title = "Q-Q Plot of RTs", x = "Theoretical Quantiles", y = "Sample Quantiles")
+qq_plot
+```
+
+#### Merging Participant and Task Data
+```{r Participant and Test Data Merging}
+df_part$part_experiment <- NULL
+
+df_merged <- merge(df_clean, df_part, by = "part_id")
+summary(df_merged)
+```
+
+### 3. Mixed Effects Models
+#### Clause Effects Model
+```{r Clause Effects Model}
+lm_clause <- df_merged %>%
+    filter(segment %in% c("S3", "S4")) %>%
+    lmer(data = ., rt ~ clause_type + (1 | part_eng_pro) + (1 | part_eng_exp) + (1 | part_id))
+summary(lm_clause)
+```
+
+#### Clause Effects Table
+```{r Clause Effects Clean Output}
+lm_clause_tidy <- lm_clause %>%
+    tidy() %>%
+    filter(effect == "fixed") %>%
+    mutate(
+        estimate = exp(estimate),
+        p.value = case_when(
+            p.value < 0.001 ~ "< 0.001",
+            p.value < 0.01 ~ "< 0.01",
+            p.value < 0.05 ~ "< 0.05",
+            p.value > 0.05 ~ "> 0.05",
+        ),
+        term = case_when(
+            term == "(Intercept)" ~ "SR (Baseline)",
+            term == "clause_typeOR" ~ "OR"
+        ),
+        code = case_when(
+            p.value == "< 0.001" ~ "***",
+            p.value == "< 0.01" ~ "**",
+            p.value == "< 0.05" ~ "*",
+            p.value == "> 0.05" ~ " "
+        )
+    )
+
+lm_clause_tidy
+```
+
+```{r Clause Effects Table}
+lm_clause_table <- lm_clause_tidy %>%
+    gt() %>%
+    cols_hide(columns = c(effect, group, df)) %>%
+    tab_options(
+        table.width = 565,
+        table.font.names = "Times",
+        table.font.size = 12,
+        table.border.top.width = 0,
+        heading.title.font.size = 12,
+        heading.subtitle.font.size = 11,
+        heading.border.bottom.color = accent_color,
+        column_labels.font.weight = "bold",
+        column_labels.background.color = accent_color
+    ) %>%
+    tab_header(
+        title = md("**Mixed Model Results**"),
+        subtitle = md("**Clause Type**")
+    ) %>%
+    cols_label(
+        term = "Condition",
+        estimate = "Estimate (ms)",
+        std.error = "Std. Error",
+        statistic = md("*t*-value"),
+        p.value = md("*p*-value"),
+        code = "Signif. Code"
+    ) %>%
+    fmt_number(
+        columns = c(term, estimate, std.error, statistic, p.value),
+        decimals = 3
+    )
+
+lm_clause_table
+gtsave(lm_clause_table, filename = "clause_type_table.png", path = tables_path)
+```
+
+#### Clause Effects Plot
+```{r Clause Effects Plot}
+lm_clause_plot <- df_merged %>%
+    filter(segment %in% c("S3", "S4")) %>%
+    ggplot(
+        aes(
+            y = exp(rt),
+            x = clause_type,
+            color = clause_type,
+            fill = clause_type
+        )
+    ) +
+    geom_boxplot(
+        show.legend = FALSE,
+        staplewidth = 0.5,
+        notch = TRUE,
+        alpha = 0.5,
+        linewidth = 1
+    ) +
+    geom_rug(
+        show.legend = FALSE,
+        sides = "l"
+    ) +
+    labs(
+        title = "Clause Type Effects on RC RTs",
+        subtitle = "Data from Segments 3 and 4",
+        x = "Clause Type",
+        y = "Reaction Times (ms)"
+    )
+lm_clause_plot
+
+ggsave(filename = "lm_clause_plot.svg", path = plots_path, height = 6, width = 5)
+```
+
+#### Number Effects Model
+```{r Number Effects Model}
+lm_number <- df_merged %>%
+    filter(segment %in% c("S3", "S4")) %>%
+    lmer(data = ., rt ~ clause_type * number + (1 | part_eng_exp) + (1 | part_eng_pro) + (1 | part_id))
+summary(lm_number)
+```
+
+#### Number Effects Table
+```{r Number Effects Clean Output}
+lm_number_tidy <- lm_number %>%
+    tidy() %>%
+    filter(effect == "fixed") %>%
+    mutate(
+        estimate = exp(estimate),
+        p.value = case_when(
+            p.value < 0.001 ~ "< 0.001",
+            p.value < 0.01 ~ "< 0.01",
+            p.value < 0.05 ~ "< 0.05",
+            p.value > 0.05 ~ "> 0.05",
+        ),
+        term = case_when(
+            term == "(Intercept)" ~ "SR * SS (Baseline)",
+            term == "clause_typeOR" ~ "OR",
+            term == "numberPP" ~ "PP",
+            term == "numberSP" ~ "SP",
+            term == "numberPS" ~ "PS",
+            term == "clause_typeOR:numberPP" ~ "OR * PP",
+            term == "clause_typeOR:numberSP" ~ "OR * SP",
+            term == "clause_typeOR:numberPS" ~ "OR * PS",
+        ),
+        code = case_when(
+            p.value == "< 0.001" ~ "***",
+            p.value == "< 0.01" ~ "**",
+            p.value == "< 0.05" ~ "*",
+            p.value == "> 0.05" ~ " "
+        )
+    )
+
+lm_number_tidy
+```
+
+```{r Number Effects Table}
+lm_number_table <- lm_number_tidy %>%
+    gt() %>%
+    cols_hide(columns = c(effect, group, df)) %>%
+    tab_options(
+        table.width = 565,
+        table.font.names = "Times",
+        table.font.size = 12,
+        table.border.top.width = 0,
+        heading.title.font.size = 12,
+        heading.subtitle.font.size = 11,
+        column_labels.font.weight = "bold",
+        heading.border.bottom.color = accent_color,
+        column_labels.background.color = accent_color
+    ) %>%
+    tab_header(
+        title = md("**Mixed Model Results**"),
+        subtitle = md("**Number and ORs**")
+    ) %>%
+    cols_label(
+        term = "Condition",
+        estimate = "Estimate (ms)",
+        std.error = "Std. Error",
+        statistic = md("*t*-value"),
+        p.value = md("*p*-value"),
+        code = "Signif. Code"
+    ) %>%
+    fmt_number(
+        columns = c(term, estimate, std.error, statistic, p.value),
+        decimals = 3
+    )
+
+lm_number_table
+gtsave(lm_number_table, filename = "number_table.png", path = tables_path)
+```
+
+#### Number Effects Plotx
+```{r Number Effects Plot}
+lm_number_plot <- df_merged %>%
+    filter(clause_type == "OR") %>%
+    ggplot(
+        aes(
+            y = exp(rt),
+            x = segment,
+            color = number,
+            group = number
+        )
+    ) +
+    stat_summary(
+        fun = mean,
+        geom = "line",
+        linewidth = 1
+    ) +
+    stat_summary(
+        aes(shape = number),
+        fun = mean,
+        geom = "point",
+        size = 2,
+        stroke = 1,
+        fill = "white"
+    ) +
+    geom_rug(
+        show.legend = FALSE,
+        sides = "l",
+        alpha = 0.5
+    ) +
+    coord_cartesian(ylim = c(600, 2100)) +
+    scale_shape_manual(
+        values = c(21, 22, 23, 24)
+    ) +
+    scale_x_discrete(
+        labels = c(
+            "S1\nOR: The dog/s",
+            "S2\nthat",
+            "S3\nthe cat/s",
+            "S4\nchase/s",
+            "S5\nrun/s"
+        )
+    ) +
+    labs(
+        title = "Number Effect on OR RTs by Segment",
+        x = "Segments",
+        y = "Reaction Times (ms)"
+    ) +
+    guides(
+        color = guide_legend("Number"),
+        shape = guide_legend("Number")
+    ) +
+    theme(
+        legend.position = c(0.11, 0.29),
+        legend.box.background = element_rect(linewidth = 1, color = accent_color, linetype = "solid"),
+        legend.text = element_text(size = 11),
+        legend.title = element_text(size = 11)
+    ) +
+    facet_wrap(~matching, dir = "v")
+lm_number_plot
+
+ggsave(filename = "lm_number_segment_plot.svg", path = plots_path, height = 15, width = 15, units = "cm")
+```

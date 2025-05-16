@@ -1,0 +1,646 @@
+"rt","response","trial_type","trial_index","plugin_version","time_elapsed","part_id","task","item_number","item_type","segment","clause_type","number","stimulus","question","correct_answer","part_answer","correct"
+"1486445","{""part_id"":""37""}","survey-html-form","0","2.0.0","1486449","37","","","","","","","","","","",""
+"1561"," ","html-keyboard-response","2","2.0.0","1536040","37","item","null","pr_item","s0","sr","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | _______ | ____</p>","","","",""
+"640"," ","html-keyboard-response","3","2.0.0","1536681","37","item","null","pr_item","s1","sr","ss","<p class=""trial-stimulus"">The cat | ____ | _______ | _______ | ____</p>","","","",""
+"503"," ","html-keyboard-response","4","2.0.0","1537185","37","item","null","pr_item","s2","sr","ss","<p class=""trial-stimulus"">_______ | that | _______ | _______ | ____</p>","","","",""
+"405"," ","html-keyboard-response","5","2.0.0","1537592","37","item","null","pr_item","s3","sr","ss","<p class=""trial-stimulus"">_______ | ____ | watches | _______ | ____</p>","","","",""
+"352"," ","html-keyboard-response","6","2.0.0","1537946","37","item","null","pr_item","s4","sr","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | the dog | ____</p>","","","",""
+"388"," ","html-keyboard-response","7","2.0.0","1538335","37","item","null","pr_item","s5","sr","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | _______ | eats</p>","false","","",""
+"2194"," ","html-keyboard-response","9","2.0.0","1541031","37","item","null","pr_item","s0","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | _____ | ______</p>","","","",""
+"799"," ","html-keyboard-response","10","2.0.0","1541831","37","item","null","pr_item","s1","or","ss","<p class=""trial-stimulus"">The horse | ____ | _________ | _____ | ______</p>","","","",""
+"536"," ","html-keyboard-response","11","2.0.0","1542368","37","item","null","pr_item","s2","or","ss","<p class=""trial-stimulus"">_________ | that | _________ | _____ | ______</p>","","","",""
+"712"," ","html-keyboard-response","12","2.0.0","1543081","37","item","null","pr_item","s3","or","ss","<p class=""trial-stimulus"">_________ | ____ | the zebra | _____ | ______</p>","","","",""
+"590"," ","html-keyboard-response","13","2.0.0","1543672","37","item","null","pr_item","s4","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | kicks | ______</p>","","","",""
+"528"," ","html-keyboard-response","14","2.0.0","1544201","37","item","null","pr_item","s5","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | _____ | laughs</p>","<div class='container trial-question'>
+            <h2 class='trial-question-header'>Who laughs?</h2>
+            <div>
+              <div class='container'>
+                <h2 class='trial-question-answer'>The zebra</h2>
+                <h2 class='trial-question-key'>F</h2>
+              </div>
+              <div class='container'>
+                <h2 class='trial-question-answer'>The horse</h2>
+                <h2 class='trial-question-key'>J</h2>
+              </div>
+            </div>
+          </div>","","",""
+"3733","J","html-keyboard-response","15","2.0.0","1548439","37","question","null","pr_item","","or","ss","<div class='container trial-question'>
+            <h2 class='trial-question-header'>Who laughs?</h2>
+            <div>
+              <div class='container'>
+                <h2 class='trial-question-answer'>The zebra</h2>
+                <h2 class='trial-question-key'>F</h2>
+              </div>
+              <div class='container'>
+                <h2 class='trial-question-answer'>The horse</h2>
+                <h2 class='trial-question-key'>J</h2>
+              </div>
+            </div>
+          </div>","","j","J","0"
+"1272"," ","html-keyboard-response","17","2.0.0","1557263","37","item","4","exp_item","s0","sr","sp","<p class=""trial-stimulus"">_________ | ____ | _______ | __________ | ____</p>","","","",""
+"640"," ","html-keyboard-response","18","2.0.0","1557905","37","item","4","exp_item","s1","sr","sp","<p class=""trial-stimulus"">The zebra | ____ | _______ | __________ | ____</p>","","","",""
+"550"," ","html-keyboard-response","19","2.0.0","1558455","37","item","4","exp_item","s2","sr","sp","<p class=""trial-stimulus"">_________ | that | _______ | __________ | ____</p>","","","",""
+"569"," ","html-keyboard-response","20","2.0.0","1559025","37","item","4","exp_item","s3","sr","sp","<p class=""trial-stimulus"">_________ | ____ | follows | __________ | ____</p>","","","",""
+"590"," ","html-keyboard-response","21","2.0.0","1559616","37","item","4","exp_item","s4","sr","sp","<p class=""trial-stimulus"">_________ | ____ | _______ | the horses | ____</p>","","","",""
+"919"," ","html-keyboard-response","22","2.0.0","1560536","37","item","4","exp_item","s5","sr","sp","<p class=""trial-stimulus"">_________ | ____ | _______ | __________ | runs</p>","false","","",""
+"1276"," ","html-keyboard-response","24","2.0.0","1562321","37","item","4","exp_item","s0","sr","ps","<p class=""trial-stimulus"">__________ | ____ | ______ | _________ | ___</p>","","","",""
+"573"," ","html-keyboard-response","25","2.0.0","1562895","37","item","4","exp_item","s1","sr","ps","<p class=""trial-stimulus"">The zebras | ____ | ______ | _________ | ___</p>","","","",""
+"488"," ","html-keyboard-response","26","2.0.0","1563383","37","item","4","exp_item","s2","sr","ps","<p class=""trial-stimulus"">__________ | that | ______ | _________ | ___</p>","","","",""
+"487"," ","html-keyboard-response","27","2.0.0","1563871","37","item","4","exp_item","s3","sr","ps","<p class=""trial-stimulus"">__________ | ____ | follow | _________ | ___</p>","","","",""
+"464"," ","html-keyboard-response","28","2.0.0","1564336","37","item","4","exp_item","s4","sr","ps","<p class=""trial-stimulus"">__________ | ____ | ______ | the horse | ___</p>","","","",""
+"1014"," ","html-keyboard-response","29","2.0.0","1565351","37","item","4","exp_item","s5","sr","ps","<p class=""trial-stimulus"">__________ | ____ | ______ | _________ | run</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who runs?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The horse</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The zebras</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2130","J","html-keyboard-response","30","2.0.0","1567985","37","question","4","exp_item","","sr","ps","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who runs?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The horse</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The zebras</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","j","J","0"
+"1015"," ","html-keyboard-response","31","2.0.0","1569505","37","item","9","fill_item","s0","sr","ss","<p class=""trial-stimulus"">__________ | ___ | ______ | __________ | _______</p>","","","",""
+"694"," ","html-keyboard-response","32","2.0.0","1570201","37","item","9","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The singer | ___ | ______ | __________ | _______</p>","","","",""
+"447"," ","html-keyboard-response","33","2.0.0","1570649","37","item","9","fill_item","s2","sr","ss","<p class=""trial-stimulus"">__________ | who | ______ | __________ | _______</p>","","","",""
+"605"," ","html-keyboard-response","34","2.0.0","1571255","37","item","9","fill_item","s3","sr","ss","<p class=""trial-stimulus"">__________ | ___ | throws | __________ | _______</p>","","","",""
+"640"," ","html-keyboard-response","35","2.0.0","1571896","37","item","9","fill_item","s4","sr","ss","<p class=""trial-stimulus"">__________ | ___ | ______ | the guitar | _______</p>","","","",""
+"935"," ","html-keyboard-response","36","2.0.0","1572833","37","item","9","fill_item","s5","sr","ss","<p class=""trial-stimulus"">__________ | ___ | ______ | __________ | screams</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the singer scream?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2656","J","html-keyboard-response","37","2.0.0","1576001","37","question","9","fill_item","","sr","ss","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the singer scream?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","j","J","0"
+"819"," ","html-keyboard-response","38","2.0.0","1577327","37","item","1","exp_item","s0","sr","pp","<p class=""trial-stimulus"">__________ | ____ | _____ | __________ | ____</p>","","","",""
+"616"," ","html-keyboard-response","39","2.0.0","1577943","37","item","1","exp_item","s1","sr","pp","<p class=""trial-stimulus"">The horses | ____ | _____ | __________ | ____</p>","","","",""
+"505"," ","html-keyboard-response","40","2.0.0","1578449","37","item","1","exp_item","s2","sr","pp","<p class=""trial-stimulus"">__________ | that | _____ | __________ | ____</p>","","","",""
+"469"," ","html-keyboard-response","41","2.0.0","1578919","37","item","1","exp_item","s3","sr","pp","<p class=""trial-stimulus"">__________ | ____ | chase | __________ | ____</p>","","","",""
+"601"," ","html-keyboard-response","42","2.0.0","1579521","37","item","1","exp_item","s4","sr","pp","<p class=""trial-stimulus"">__________ | ____ | _____ | the zebras | ____</p>","","","",""
+"589"," ","html-keyboard-response","43","2.0.0","1580111","37","item","1","exp_item","s5","sr","pp","<p class=""trial-stimulus"">__________ | ____ | _____ | __________ | fall</p>","false","","",""
+"769"," ","html-keyboard-response","45","2.0.0","1581391","37","item","1","exp_item","s0","sr","ps","<p class=""trial-stimulus"">__________ | ____ | _____ | _________ | ____</p>","","","",""
+"544"," ","html-keyboard-response","46","2.0.0","1581936","37","item","1","exp_item","s1","sr","ps","<p class=""trial-stimulus"">The horses | ____ | _____ | _________ | ____</p>","","","",""
+"470"," ","html-keyboard-response","47","2.0.0","1582407","37","item","1","exp_item","s2","sr","ps","<p class=""trial-stimulus"">__________ | that | _____ | _________ | ____</p>","","","",""
+"320"," ","html-keyboard-response","48","2.0.0","1582729","37","item","1","exp_item","s3","sr","ps","<p class=""trial-stimulus"">__________ | ____ | chase | _________ | ____</p>","","","",""
+"398"," ","html-keyboard-response","49","2.0.0","1583128","37","item","1","exp_item","s4","sr","ps","<p class=""trial-stimulus"">__________ | ____ | _____ | the zebra | ____</p>","","","",""
+"511"," ","html-keyboard-response","50","2.0.0","1583640","37","item","1","exp_item","s5","sr","ps","<p class=""trial-stimulus"">__________ | ____ | _____ | _________ | fall</p>","false","","",""
+"988"," ","html-keyboard-response","52","2.0.0","1585144","37","item","7","exp_item","s0","sr","ps","<p class=""trial-stimulus"">________ | ____ | ____ | _______ | ___</p>","","","",""
+"759"," ","html-keyboard-response","53","2.0.0","1585904","37","item","7","exp_item","s1","sr","ps","<p class=""trial-stimulus"">The dogs | ____ | ____ | _______ | ___</p>","","","",""
+"567"," ","html-keyboard-response","54","2.0.0","1586473","37","item","7","exp_item","s2","sr","ps","<p class=""trial-stimulus"">________ | that | ____ | _______ | ___</p>","","","",""
+"518"," ","html-keyboard-response","55","2.0.0","1586992","37","item","7","exp_item","s3","sr","ps","<p class=""trial-stimulus"">________ | ____ | push | _______ | ___</p>","","","",""
+"608"," ","html-keyboard-response","56","2.0.0","1587600","37","item","7","exp_item","s4","sr","ps","<p class=""trial-stimulus"">________ | ____ | ____ | the cat | ___</p>","","","",""
+"575"," ","html-keyboard-response","57","2.0.0","1588176","37","item","7","exp_item","s5","sr","ps","<p class=""trial-stimulus"">________ | ____ | ____ | _______ | cry</p>","false","","",""
+"895"," ","html-keyboard-response","59","2.0.0","1589584","37","item","5","fill_item","s0","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | _______ | _____</p>","","","",""
+"2447"," ","html-keyboard-response","60","2.0.0","1592031","37","item","5","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The chef | ___ | _____ | _______ | _____</p>","","","",""
+"1719"," ","html-keyboard-response","61","2.0.0","1593751","37","item","5","fill_item","s2","sr","ss","<p class=""trial-stimulus"">________ | who | _____ | _______ | _____</p>","","","",""
+"440"," ","html-keyboard-response","62","2.0.0","1594191","37","item","5","fill_item","s3","sr","ss","<p class=""trial-stimulus"">________ | ___ | kicks | _______ | _____</p>","","","",""
+"447"," ","html-keyboard-response","63","2.0.0","1594639","37","item","5","fill_item","s4","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | the box | _____</p>","","","",""
+"520"," ","html-keyboard-response","64","2.0.0","1595159","37","item","5","fill_item","s5","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | _______ | cries</p>","<div class='container trial-question'>
+    <h2 class='trial-question-header'>Does the chef cry?</h2>
+    <div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>No</h2>
+        <h2 class='trial-question-key'>F</h2>
+      </div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>Yes</h2>
+        <h2 class='trial-question-key'>J</h2>
+      </div>
+    </div>
+  </div>","","",""
+"6238","J","html-keyboard-response","65","2.0.0","1601911","37","question","5","fill_item","","sr","ss","<div class='container trial-question'>
+    <h2 class='trial-question-header'>Does the chef cry?</h2>
+    <div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>No</h2>
+        <h2 class='trial-question-key'>F</h2>
+      </div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>Yes</h2>
+        <h2 class='trial-question-key'>J</h2>
+      </div>
+    </div>
+  </div>","","j","J","0"
+"1555"," ","html-keyboard-response","66","2.0.0","1603976","37","item","4","exp_item","s0","or","sp","<p class=""trial-stimulus"">_________ | ____ | __________ | ______ | ____</p>","","","",""
+"1494"," ","html-keyboard-response","67","2.0.0","1605471","37","item","4","exp_item","s1","or","sp","<p class=""trial-stimulus"">The zebra | ____ | __________ | ______ | ____</p>","","","",""
+"488"," ","html-keyboard-response","68","2.0.0","1605959","37","item","4","exp_item","s2","or","sp","<p class=""trial-stimulus"">_________ | that | __________ | ______ | ____</p>","","","",""
+"496"," ","html-keyboard-response","69","2.0.0","1606456","37","item","4","exp_item","s3","or","sp","<p class=""trial-stimulus"">_________ | ____ | the horses | ______ | ____</p>","","","",""
+"598"," ","html-keyboard-response","70","2.0.0","1607055","37","item","4","exp_item","s4","or","sp","<p class=""trial-stimulus"">_________ | ____ | __________ | follow | ____</p>","","","",""
+"1601"," ","html-keyboard-response","71","2.0.0","1608656","37","item","4","exp_item","s5","or","sp","<p class=""trial-stimulus"">_________ | ____ | __________ | ______ | runs</p>","<div class='container trial-question'>
+     <h2 class='trial-question-header'>Who runs?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The horses</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The zebra</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"1824","J","html-keyboard-response","72","2.0.0","1610983","37","question","4","exp_item","","or","sp","<div class='container trial-question'>
+     <h2 class='trial-question-header'>Who runs?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The horses</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The zebra</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","j","J","0"
+"1416"," ","html-keyboard-response","73","2.0.0","1612905","37","item","4","exp_item","s0","sr","ss","<p class=""trial-stimulus"">_________ | ____ | _______ | _________ | ____</p>","","","",""
+"678"," ","html-keyboard-response","74","2.0.0","1613585","37","item","4","exp_item","s1","sr","ss","<p class=""trial-stimulus"">The zebra | ____ | _______ | _________ | ____</p>","","","",""
+"653"," ","html-keyboard-response","75","2.0.0","1614239","37","item","4","exp_item","s2","sr","ss","<p class=""trial-stimulus"">_________ | that | _______ | _________ | ____</p>","","","",""
+"658"," ","html-keyboard-response","76","2.0.0","1614897","37","item","4","exp_item","s3","sr","ss","<p class=""trial-stimulus"">_________ | ____ | follows | _________ | ____</p>","","","",""
+"702"," ","html-keyboard-response","77","2.0.0","1615601","37","item","4","exp_item","s4","sr","ss","<p class=""trial-stimulus"">_________ | ____ | _______ | the horse | ____</p>","","","",""
+"767"," ","html-keyboard-response","78","2.0.0","1616369","37","item","4","exp_item","s5","sr","ss","<p class=""trial-stimulus"">_________ | ____ | _______ | _________ | runs</p>","false","","",""
+"1071"," ","html-keyboard-response","80","2.0.0","1617944","37","item","7","exp_item","s0","sr","pp","<p class=""trial-stimulus"">________ | ____ | ____ | ________ | ___</p>","","","",""
+"632"," ","html-keyboard-response","81","2.0.0","1618576","37","item","7","exp_item","s1","sr","pp","<p class=""trial-stimulus"">The dogs | ____ | ____ | ________ | ___</p>","","","",""
+"495"," ","html-keyboard-response","82","2.0.0","1619073","37","item","7","exp_item","s2","sr","pp","<p class=""trial-stimulus"">________ | that | ____ | ________ | ___</p>","","","",""
+"629"," ","html-keyboard-response","83","2.0.0","1619703","37","item","7","exp_item","s3","sr","pp","<p class=""trial-stimulus"">________ | ____ | push | ________ | ___</p>","","","",""
+"801"," ","html-keyboard-response","84","2.0.0","1620505","37","item","7","exp_item","s4","sr","pp","<p class=""trial-stimulus"">________ | ____ | ____ | the cats | ___</p>","","","",""
+"789"," ","html-keyboard-response","85","2.0.0","1621295","37","item","7","exp_item","s5","sr","pp","<p class=""trial-stimulus"">________ | ____ | ____ | ________ | cry</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who cries?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dogs</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cats</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2411","F","html-keyboard-response","86","2.0.0","1624216","37","question","7","exp_item","","sr","pp","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who cries?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dogs</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cats</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","f","F","0"
+"687"," ","html-keyboard-response","87","2.0.0","1625409","37","item","1","fill_item","s0","sr","ss","<p class=""trial-stimulus"">________ | ___ | _______ | _______ | _____</p>","","","",""
+"790"," ","html-keyboard-response","88","2.0.0","1626201","37","item","1","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The chef | ___ | _______ | _______ | _____</p>","","","",""
+"479"," ","html-keyboard-response","89","2.0.0","1626681","37","item","1","fill_item","s2","sr","ss","<p class=""trial-stimulus"">________ | who | _______ | _______ | _____</p>","","","",""
+"662"," ","html-keyboard-response","90","2.0.0","1627345","37","item","1","fill_item","s3","sr","ss","<p class=""trial-stimulus"">________ | ___ | carries | _______ | _____</p>","","","",""
+"461"," ","html-keyboard-response","91","2.0.0","1627807","37","item","1","fill_item","s4","sr","ss","<p class=""trial-stimulus"">________ | ___ | _______ | the box | _____</p>","","","",""
+"2585"," ","html-keyboard-response","92","2.0.0","1630393","37","item","1","fill_item","s5","sr","ss","<p class=""trial-stimulus"">________ | ___ | _______ | _______ | falls</p>","false","","",""
+"1011"," ","html-keyboard-response","94","2.0.0","1631920","37","item","7","exp_item","s0","sr","ss","<p class=""trial-stimulus"">_______ | ____ | ______ | _______ | _____</p>","","","",""
+"503"," ","html-keyboard-response","95","2.0.0","1632423","37","item","7","exp_item","s1","sr","ss","<p class=""trial-stimulus"">The dog | ____ | ______ | _______ | _____</p>","","","",""
+"433"," ","html-keyboard-response","96","2.0.0","1632857","37","item","7","exp_item","s2","sr","ss","<p class=""trial-stimulus"">_______ | that | ______ | _______ | _____</p>","","","",""
+"375"," ","html-keyboard-response","97","2.0.0","1633233","37","item","7","exp_item","s3","sr","ss","<p class=""trial-stimulus"">_______ | ____ | pushes | _______ | _____</p>","","","",""
+"375"," ","html-keyboard-response","98","2.0.0","1633608","37","item","7","exp_item","s4","sr","ss","<p class=""trial-stimulus"">_______ | ____ | ______ | the cat | _____</p>","","","",""
+"422"," ","html-keyboard-response","99","2.0.0","1634031","37","item","7","exp_item","s5","sr","ss","<p class=""trial-stimulus"">_______ | ____ | ______ | _______ | cries</p>","false","","",""
+"565"," ","html-keyboard-response","101","2.0.0","1635105","37","item","4","fill_item","s0","sr","ss","<p class=""trial-stimulus"">________ | ___ | ______ | _______ | _______</p>","","","",""
+"390"," ","html-keyboard-response","102","2.0.0","1635495","37","item","4","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The chef | ___ | ______ | _______ | _______</p>","","","",""
+"376"," ","html-keyboard-response","103","2.0.0","1635872","37","item","4","fill_item","s2","sr","ss","<p class=""trial-stimulus"">________ | who | ______ | _______ | _______</p>","","","",""
+"374"," ","html-keyboard-response","104","2.0.0","1636247","37","item","4","fill_item","s3","sr","ss","<p class=""trial-stimulus"">________ | ___ | throws | _______ | _______</p>","","","",""
+"401"," ","html-keyboard-response","105","2.0.0","1636649","37","item","4","fill_item","s4","sr","ss","<p class=""trial-stimulus"">________ | ___ | ______ | the box | _______</p>","","","",""
+"279"," ","html-keyboard-response","106","2.0.0","1636930","37","item","4","fill_item","s5","sr","ss","<p class=""trial-stimulus"">________ | ___ | ______ | _______ | screams</p>","false","","",""
+"682"," ","html-keyboard-response","108","2.0.0","1638121","37","item","8","exp_item","s0","sr","pp","<p class=""trial-stimulus"">________ | ____ | ___ | ________ | _____</p>","","","",""
+"1453"," ","html-keyboard-response","109","2.0.0","1639575","37","item","8","exp_item","s1","sr","pp","<p class=""trial-stimulus"">The cats | ____ | ___ | ________ | _____</p>","","","",""
+"369"," ","html-keyboard-response","110","2.0.0","1639945","37","item","8","exp_item","s2","sr","pp","<p class=""trial-stimulus"">________ | that | ___ | ________ | _____</p>","","","",""
+"373"," ","html-keyboard-response","111","2.0.0","1640319","37","item","8","exp_item","s3","sr","pp","<p class=""trial-stimulus"">________ | ____ | hug | ________ | _____</p>","","","",""
+"408"," ","html-keyboard-response","112","2.0.0","1640728","37","item","8","exp_item","s4","sr","pp","<p class=""trial-stimulus"">________ | ____ | ___ | the dogs | _____</p>","","","",""
+"888"," ","html-keyboard-response","113","2.0.0","1641616","37","item","8","exp_item","s5","sr","pp","<p class=""trial-stimulus"">________ | ____ | ___ | ________ | smile</p>","false","","",""
+"3782"," ","html-keyboard-response","115","2.0.0","1645903","37","item","15","fill_item","s0","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | __________ | _______</p>","","","",""
+"585"," ","html-keyboard-response","116","2.0.0","1646489","37","item","15","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The woman | ___ | ______ | __________ | _______</p>","","","",""
+"502"," ","html-keyboard-response","117","2.0.0","1646992","37","item","15","fill_item","s2","sr","ss","<p class=""trial-stimulus"">_________ | who | ______ | __________ | _______</p>","","","",""
+"630"," ","html-keyboard-response","118","2.0.0","1647623","37","item","15","fill_item","s3","sr","ss","<p class=""trial-stimulus"">_________ | ___ | stores | __________ | _______</p>","","","",""
+"776"," ","html-keyboard-response","119","2.0.0","1648399","37","item","15","fill_item","s4","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | the letter | _______</p>","","","",""
+"641"," ","html-keyboard-response","120","2.0.0","1649041","37","item","15","fill_item","s5","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | __________ | murmurs</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the woman murmur?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2043","J","html-keyboard-response","121","2.0.0","1651599","37","question","15","fill_item","","sr","ss","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the woman murmur?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","j","J","0"
+"1945"," ","html-keyboard-response","122","2.0.0","1654055","37","item","7","fill_item","s0","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _____ | __________ | _____</p>","","","",""
+"594"," ","html-keyboard-response","123","2.0.0","1654650","37","item","7","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The singer | ___ | _____ | __________ | _____</p>","","","",""
+"445"," ","html-keyboard-response","124","2.0.0","1655097","37","item","7","fill_item","s2","sr","ss","<p class=""trial-stimulus"">__________ | who | _____ | __________ | _____</p>","","","",""
+"479"," ","html-keyboard-response","125","2.0.0","1655577","37","item","7","fill_item","s3","sr","ss","<p class=""trial-stimulus"">__________ | ___ | grabs | __________ | _____</p>","","","",""
+"487"," ","html-keyboard-response","126","2.0.0","1656066","37","item","7","fill_item","s4","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _____ | the guitar | _____</p>","","","",""
+"421"," ","html-keyboard-response","127","2.0.0","1656488","37","item","7","fill_item","s5","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _____ | __________ | cries</p>","false","","",""
+"1386"," ","html-keyboard-response","129","2.0.0","1658377","37","item","14","fill_item","s0","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | __________ | _______</p>","","","",""
+"637"," ","html-keyboard-response","130","2.0.0","1659015","37","item","14","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The woman | ___ | ______ | __________ | _______</p>","","","",""
+"632"," ","html-keyboard-response","131","2.0.0","1659647","37","item","14","fill_item","s2","sr","ss","<p class=""trial-stimulus"">_________ | who | ______ | __________ | _______</p>","","","",""
+"633"," ","html-keyboard-response","132","2.0.0","1660281","37","item","14","fill_item","s3","sr","ss","<p class=""trial-stimulus"">_________ | ___ | throws | __________ | _______</p>","","","",""
+"479"," ","html-keyboard-response","133","2.0.0","1660761","37","item","14","fill_item","s4","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | the letter | _______</p>","","","",""
+"766"," ","html-keyboard-response","134","2.0.0","1661527","37","item","14","fill_item","s5","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | __________ | screams</p>","false","","",""
+"1686"," ","html-keyboard-response","136","2.0.0","1663729","37","item","1","exp_item","s0","or","sp","<p class=""trial-stimulus"">_________ | ____ | __________ | _____ | _____</p>","","","",""
+"1047"," ","html-keyboard-response","137","2.0.0","1664777","37","item","1","exp_item","s1","or","sp","<p class=""trial-stimulus"">The horse | ____ | __________ | _____ | _____</p>","","","",""
+"1310"," ","html-keyboard-response","138","2.0.0","1666088","37","item","1","exp_item","s2","or","sp","<p class=""trial-stimulus"">_________ | that | __________ | _____ | _____</p>","","","",""
+"662"," ","html-keyboard-response","139","2.0.0","1666751","37","item","1","exp_item","s3","or","sp","<p class=""trial-stimulus"">_________ | ____ | the zebras | _____ | _____</p>","","","",""
+"592"," ","html-keyboard-response","140","2.0.0","1667345","37","item","1","exp_item","s4","or","sp","<p class=""trial-stimulus"">_________ | ____ | __________ | chase | _____</p>","","","",""
+"1063"," ","html-keyboard-response","141","2.0.0","1668408","37","item","1","exp_item","s5","or","sp","<p class=""trial-stimulus"">_________ | ____ | __________ | _____ | falls</p>","false","","",""
+"2701"," ","html-keyboard-response","143","2.0.0","1671623","37","item","8","exp_item","s0","sr","ss","<p class=""trial-stimulus"">_______ | ____ | ____ | _______ | ______</p>","","","",""
+"544"," ","html-keyboard-response","144","2.0.0","1672169","37","item","8","exp_item","s1","sr","ss","<p class=""trial-stimulus"">The cat | ____ | ____ | _______ | ______</p>","","","",""
+"1022"," ","html-keyboard-response","145","2.0.0","1673193","37","item","8","exp_item","s2","sr","ss","<p class=""trial-stimulus"">_______ | that | ____ | _______ | ______</p>","","","",""
+"534"," ","html-keyboard-response","146","2.0.0","1673727","37","item","8","exp_item","s3","sr","ss","<p class=""trial-stimulus"">_______ | ____ | hugs | _______ | ______</p>","","","",""
+"369"," ","html-keyboard-response","147","2.0.0","1674097","37","item","8","exp_item","s4","sr","ss","<p class=""trial-stimulus"">_______ | ____ | ____ | the dog | ______</p>","","","",""
+"373"," ","html-keyboard-response","148","2.0.0","1674471","37","item","8","exp_item","s5","sr","ss","<p class=""trial-stimulus"">_______ | ____ | ____ | _______ | smiles</p>","false","","",""
+"4764"," ","html-keyboard-response","150","2.0.0","1679737","37","item","3","fill_item","s0","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | _______ | ______</p>","","","",""
+"503"," ","html-keyboard-response","151","2.0.0","1680241","37","item","3","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The chef | ___ | _____ | _______ | ______</p>","","","",""
+"559"," ","html-keyboard-response","152","2.0.0","1680801","37","item","3","fill_item","s2","sr","ss","<p class=""trial-stimulus"">________ | who | _____ | _______ | ______</p>","","","",""
+"621"," ","html-keyboard-response","153","2.0.0","1681423","37","item","3","fill_item","s3","sr","ss","<p class=""trial-stimulus"">________ | ___ | opens | _______ | ______</p>","","","",""
+"456"," ","html-keyboard-response","154","2.0.0","1681879","37","item","3","fill_item","s4","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | the box | ______</p>","","","",""
+"1144"," ","html-keyboard-response","155","2.0.0","1683023","37","item","3","fill_item","s5","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | _______ | smiles</p>","false","","",""
+"1180"," ","html-keyboard-response","157","2.0.0","1684719","37","item","7","exp_item","s0","or","sp","<p class=""trial-stimulus"">_______ | ____ | ________ | ____ | _____</p>","","","",""
+"553"," ","html-keyboard-response","158","2.0.0","1685273","37","item","7","exp_item","s1","or","sp","<p class=""trial-stimulus"">The dog | ____ | ________ | ____ | _____</p>","","","",""
+"495"," ","html-keyboard-response","159","2.0.0","1685769","37","item","7","exp_item","s2","or","sp","<p class=""trial-stimulus"">_______ | that | ________ | ____ | _____</p>","","","",""
+"926"," ","html-keyboard-response","160","2.0.0","1686697","37","item","7","exp_item","s3","or","sp","<p class=""trial-stimulus"">_______ | ____ | the cats | ____ | _____</p>","","","",""
+"718"," ","html-keyboard-response","161","2.0.0","1687415","37","item","7","exp_item","s4","or","sp","<p class=""trial-stimulus"">_______ | ____ | ________ | push | _____</p>","","","",""
+"1016"," ","html-keyboard-response","162","2.0.0","1688431","37","item","7","exp_item","s5","or","sp","<p class=""trial-stimulus"">_______ | ____ | ________ | ____ | cries</p>","false","","",""
+"1094"," ","html-keyboard-response","164","2.0.0","1690033","37","item","10","fill_item","s0","sr","ss","<p class=""trial-stimulus"">__________ | ___ | ______ | __________ | _______</p>","","","",""
+"677"," ","html-keyboard-response","165","2.0.0","1690711","37","item","10","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The singer | ___ | ______ | __________ | _______</p>","","","",""
+"632"," ","html-keyboard-response","166","2.0.0","1691343","37","item","10","fill_item","s2","sr","ss","<p class=""trial-stimulus"">__________ | who | ______ | __________ | _______</p>","","","",""
+"711"," ","html-keyboard-response","167","2.0.0","1692055","37","item","10","fill_item","s3","sr","ss","<p class=""trial-stimulus"">__________ | ___ | stores | __________ | _______</p>","","","",""
+"672"," ","html-keyboard-response","168","2.0.0","1692727","37","item","10","fill_item","s4","sr","ss","<p class=""trial-stimulus"">__________ | ___ | ______ | the guitar | _______</p>","","","",""
+"695"," ","html-keyboard-response","169","2.0.0","1693423","37","item","10","fill_item","s5","sr","ss","<p class=""trial-stimulus"">__________ | ___ | ______ | __________ | murmurs</p>","false","","",""
+"1312"," ","html-keyboard-response","171","2.0.0","1695249","37","item","12","fill_item","s0","sr","ss","<p class=""trial-stimulus"">_________ | ___ | _____ | __________ | _______</p>","","","",""
+"565"," ","html-keyboard-response","172","2.0.0","1695815","37","item","12","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The woman | ___ | _____ | __________ | _______</p>","","","",""
+"520"," ","html-keyboard-response","173","2.0.0","1696336","37","item","12","fill_item","s2","sr","ss","<p class=""trial-stimulus"">_________ | who | _____ | __________ | _______</p>","","","",""
+"600"," ","html-keyboard-response","174","2.0.0","1696937","37","item","12","fill_item","s3","sr","ss","<p class=""trial-stimulus"">_________ | ___ | reads | __________ | _______</p>","","","",""
+"989"," ","html-keyboard-response","175","2.0.0","1697927","37","item","12","fill_item","s4","sr","ss","<p class=""trial-stimulus"">_________ | ___ | _____ | the letter | _______</p>","","","",""
+"552"," ","html-keyboard-response","176","2.0.0","1698480","37","item","12","fill_item","s5","sr","ss","<p class=""trial-stimulus"">_________ | ___ | _____ | __________ | screams</p>","false","","",""
+"1153"," ","html-keyboard-response","178","2.0.0","1700145","37","item","1","exp_item","s0","sr","sp","<p class=""trial-stimulus"">_________ | ____ | ______ | __________ | _____</p>","","","",""
+"647"," ","html-keyboard-response","179","2.0.0","1700793","37","item","1","exp_item","s1","sr","sp","<p class=""trial-stimulus"">The horse | ____ | ______ | __________ | _____</p>","","","",""
+"638"," ","html-keyboard-response","180","2.0.0","1701431","37","item","1","exp_item","s2","sr","sp","<p class=""trial-stimulus"">_________ | that | ______ | __________ | _____</p>","","","",""
+"504"," ","html-keyboard-response","181","2.0.0","1701936","37","item","1","exp_item","s3","sr","sp","<p class=""trial-stimulus"">_________ | ____ | chases | __________ | _____</p>","","","",""
+"863"," ","html-keyboard-response","182","2.0.0","1702800","37","item","1","exp_item","s4","sr","sp","<p class=""trial-stimulus"">_________ | ____ | ______ | the zebras | _____</p>","","","",""
+"558"," ","html-keyboard-response","183","2.0.0","1703359","37","item","1","exp_item","s5","sr","sp","<p class=""trial-stimulus"">_________ | ____ | ______ | __________ | falls</p>","false","","",""
+"1201"," ","html-keyboard-response","185","2.0.0","1705073","37","item","1","exp_item","s0","or","ps","<p class=""trial-stimulus"">__________ | ____ | _________ | ______ | ____</p>","","","",""
+"557"," ","html-keyboard-response","186","2.0.0","1705631","37","item","1","exp_item","s1","or","ps","<p class=""trial-stimulus"">The horses | ____ | _________ | ______ | ____</p>","","","",""
+"569"," ","html-keyboard-response","187","2.0.0","1706201","37","item","1","exp_item","s2","or","ps","<p class=""trial-stimulus"">__________ | that | _________ | ______ | ____</p>","","","",""
+"742"," ","html-keyboard-response","188","2.0.0","1706944","37","item","1","exp_item","s3","or","ps","<p class=""trial-stimulus"">__________ | ____ | the zebra | ______ | ____</p>","","","",""
+"495"," ","html-keyboard-response","189","2.0.0","1707439","37","item","1","exp_item","s4","or","ps","<p class=""trial-stimulus"">__________ | ____ | _________ | chases | ____</p>","","","",""
+"607"," ","html-keyboard-response","190","2.0.0","1708047","37","item","1","exp_item","s5","or","ps","<p class=""trial-stimulus"">__________ | ____ | _________ | ______ | fall</p>","false","","",""
+"1308"," ","html-keyboard-response","192","2.0.0","1709865","37","item","4","exp_item","s0","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | _______ | ____</p>","","","",""
+"711"," ","html-keyboard-response","193","2.0.0","1710577","37","item","4","exp_item","s1","or","ss","<p class=""trial-stimulus"">The zebra | ____ | _________ | _______ | ____</p>","","","",""
+"671"," ","html-keyboard-response","194","2.0.0","1711250","37","item","4","exp_item","s2","or","ss","<p class=""trial-stimulus"">_________ | that | _________ | _______ | ____</p>","","","",""
+"725"," ","html-keyboard-response","195","2.0.0","1711975","37","item","4","exp_item","s3","or","ss","<p class=""trial-stimulus"">_________ | ____ | the horse | _______ | ____</p>","","","",""
+"776"," ","html-keyboard-response","196","2.0.0","1712751","37","item","4","exp_item","s4","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | follows | ____</p>","","","",""
+"704"," ","html-keyboard-response","197","2.0.0","1713455","37","item","4","exp_item","s5","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | _______ | runs</p>","false","","",""
+"1229"," ","html-keyboard-response","199","2.0.0","1715199","37","item","1","exp_item","s0","sr","ss","<p class=""trial-stimulus"">_________ | ____ | ______ | _________ | _____</p>","","","",""
+"655"," ","html-keyboard-response","200","2.0.0","1715855","37","item","1","exp_item","s1","sr","ss","<p class=""trial-stimulus"">The horse | ____ | ______ | _________ | _____</p>","","","",""
+"752"," ","html-keyboard-response","201","2.0.0","1716607","37","item","1","exp_item","s2","sr","ss","<p class=""trial-stimulus"">_________ | that | ______ | _________ | _____</p>","","","",""
+"761"," ","html-keyboard-response","202","2.0.0","1717369","37","item","1","exp_item","s3","sr","ss","<p class=""trial-stimulus"">_________ | ____ | chases | _________ | _____</p>","","","",""
+"582"," ","html-keyboard-response","203","2.0.0","1717951","37","item","1","exp_item","s4","sr","ss","<p class=""trial-stimulus"">_________ | ____ | ______ | the zebra | _____</p>","","","",""
+"656"," ","html-keyboard-response","204","2.0.0","1718608","37","item","1","exp_item","s5","sr","ss","<p class=""trial-stimulus"">_________ | ____ | ______ | _________ | falls</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who falls?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The zebra</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The horse</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2342","J","html-keyboard-response","205","2.0.0","1721463","37","question","1","exp_item","","sr","ss","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who falls?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The zebra</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The horse</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","j","J","0"
+"1151"," ","html-keyboard-response","206","2.0.0","1723127","37","item","8","exp_item","s0","sr","ps","<p class=""trial-stimulus"">________ | ____ | ___ | _______ | _____</p>","","","",""
+"600"," ","html-keyboard-response","207","2.0.0","1723727","37","item","8","exp_item","s1","sr","ps","<p class=""trial-stimulus"">The cats | ____ | ___ | _______ | _____</p>","","","",""
+"519"," ","html-keyboard-response","208","2.0.0","1724247","37","item","8","exp_item","s2","sr","ps","<p class=""trial-stimulus"">________ | that | ___ | _______ | _____</p>","","","",""
+"632"," ","html-keyboard-response","209","2.0.0","1724881","37","item","8","exp_item","s3","sr","ps","<p class=""trial-stimulus"">________ | ____ | hug | _______ | _____</p>","","","",""
+"606"," ","html-keyboard-response","210","2.0.0","1725488","37","item","8","exp_item","s4","sr","ps","<p class=""trial-stimulus"">________ | ____ | ___ | the dog | _____</p>","","","",""
+"630"," ","html-keyboard-response","211","2.0.0","1726119","37","item","8","exp_item","s5","sr","ps","<p class=""trial-stimulus"">________ | ____ | ___ | _______ | smile</p>","false","","",""
+"906"," ","html-keyboard-response","213","2.0.0","1727527","37","item","7","exp_item","s0","or","pp","<p class=""trial-stimulus"">________ | ____ | ________ | ____ | ___</p>","","","",""
+"623"," ","html-keyboard-response","214","2.0.0","1728151","37","item","7","exp_item","s1","or","pp","<p class=""trial-stimulus"">The dogs | ____ | ________ | ____ | ___</p>","","","",""
+"432"," ","html-keyboard-response","215","2.0.0","1728584","37","item","7","exp_item","s2","or","pp","<p class=""trial-stimulus"">________ | that | ________ | ____ | ___</p>","","","",""
+"967"," ","html-keyboard-response","216","2.0.0","1729552","37","item","7","exp_item","s3","or","pp","<p class=""trial-stimulus"">________ | ____ | the cats | ____ | ___</p>","","","",""
+"622"," ","html-keyboard-response","217","2.0.0","1730175","37","item","7","exp_item","s4","or","pp","<p class=""trial-stimulus"">________ | ____ | ________ | push | ___</p>","","","",""
+"649"," ","html-keyboard-response","218","2.0.0","1730825","37","item","7","exp_item","s5","or","pp","<p class=""trial-stimulus"">________ | ____ | ________ | ____ | cry</p>","false","","",""
+"1607"," ","html-keyboard-response","220","2.0.0","1732944","37","item","1","exp_item","s0","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | ______ | _____</p>","","","",""
+"694"," ","html-keyboard-response","221","2.0.0","1733639","37","item","1","exp_item","s1","or","ss","<p class=""trial-stimulus"">The horse | ____ | _________ | ______ | _____</p>","","","",""
+"720"," ","html-keyboard-response","222","2.0.0","1734359","37","item","1","exp_item","s2","or","ss","<p class=""trial-stimulus"">_________ | that | _________ | ______ | _____</p>","","","",""
+"664"," ","html-keyboard-response","223","2.0.0","1735025","37","item","1","exp_item","s3","or","ss","<p class=""trial-stimulus"">_________ | ____ | the zebra | ______ | _____</p>","","","",""
+"646"," ","html-keyboard-response","224","2.0.0","1735671","37","item","1","exp_item","s4","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | chases | _____</p>","","","",""
+"368"," ","html-keyboard-response","225","2.0.0","1736040","37","item","1","exp_item","s5","or","ss","<p class=""trial-stimulus"">_________ | ____ | _________ | ______ | falls</p>","false","","",""
+"921"," ","html-keyboard-response","227","2.0.0","1737463","37","item","11","fill_item","s0","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | __________ | ______</p>","","","",""
+"689"," ","html-keyboard-response","228","2.0.0","1738152","37","item","11","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The woman | ___ | ______ | __________ | ______</p>","","","",""
+"550"," ","html-keyboard-response","229","2.0.0","1738704","37","item","11","fill_item","s2","sr","ss","<p class=""trial-stimulus"">_________ | who | ______ | __________ | ______</p>","","","",""
+"590"," ","html-keyboard-response","230","2.0.0","1739295","37","item","11","fill_item","s3","sr","ss","<p class=""trial-stimulus"">_________ | ___ | writes | __________ | ______</p>","","","",""
+"960"," ","html-keyboard-response","231","2.0.0","1740255","37","item","11","fill_item","s4","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | the letter | ______</p>","","","",""
+"1239"," ","html-keyboard-response","232","2.0.0","1741495","37","item","11","fill_item","s5","sr","ss","<p class=""trial-stimulus"">_________ | ___ | ______ | __________ | smiles</p>","false","","",""
+"929"," ","html-keyboard-response","234","2.0.0","1742936","37","item","4","exp_item","s0","sr","pp","<p class=""trial-stimulus"">__________ | ____ | ______ | __________ | ___</p>","","","",""
+"750"," ","html-keyboard-response","235","2.0.0","1743687","37","item","4","exp_item","s1","sr","pp","<p class=""trial-stimulus"">The zebras | ____ | ______ | __________ | ___</p>","","","",""
+"575"," ","html-keyboard-response","236","2.0.0","1744263","37","item","4","exp_item","s2","sr","pp","<p class=""trial-stimulus"">__________ | that | ______ | __________ | ___</p>","","","",""
+"665"," ","html-keyboard-response","237","2.0.0","1744929","37","item","4","exp_item","s3","sr","pp","<p class=""trial-stimulus"">__________ | ____ | follow | __________ | ___</p>","","","",""
+"775"," ","html-keyboard-response","238","2.0.0","1745705","37","item","4","exp_item","s4","sr","pp","<p class=""trial-stimulus"">__________ | ____ | ______ | the horses | ___</p>","","","",""
+"998"," ","html-keyboard-response","239","2.0.0","1746704","37","item","4","exp_item","s5","sr","pp","<p class=""trial-stimulus"">__________ | ____ | ______ | __________ | run</p>","false","","",""
+"1167"," ","html-keyboard-response","241","2.0.0","1748376","37","item","6","fill_item","s0","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _____ | __________ | _____</p>","","","",""
+"694"," ","html-keyboard-response","242","2.0.0","1749071","37","item","6","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The singer | ___ | _____ | __________ | _____</p>","","","",""
+"784"," ","html-keyboard-response","243","2.0.0","1749855","37","item","6","fill_item","s2","sr","ss","<p class=""trial-stimulus"">__________ | who | _____ | __________ | _____</p>","","","",""
+"641"," ","html-keyboard-response","244","2.0.0","1750497","37","item","6","fill_item","s3","sr","ss","<p class=""trial-stimulus"">__________ | ___ | plays | __________ | _____</p>","","","",""
+"1023"," ","html-keyboard-response","245","2.0.0","1751521","37","item","6","fill_item","s4","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _____ | the guitar | _____</p>","","","",""
+"886"," ","html-keyboard-response","246","2.0.0","1752408","37","item","6","fill_item","s5","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _____ | __________ | sings</p>","false","","",""
+"1409"," ","html-keyboard-response","248","2.0.0","1754319","37","item","8","exp_item","s0","sr","sp","<p class=""trial-stimulus"">_______ | ____ | ____ | ________ | ______</p>","","","",""
+"649"," ","html-keyboard-response","249","2.0.0","1754969","37","item","8","exp_item","s1","sr","sp","<p class=""trial-stimulus"">The cat | ____ | ____ | ________ | ______</p>","","","",""
+"463"," ","html-keyboard-response","250","2.0.0","1755433","37","item","8","exp_item","s2","sr","sp","<p class=""trial-stimulus"">_______ | that | ____ | ________ | ______</p>","","","",""
+"549"," ","html-keyboard-response","251","2.0.0","1755983","37","item","8","exp_item","s3","sr","sp","<p class=""trial-stimulus"">_______ | ____ | hugs | ________ | ______</p>","","","",""
+"495"," ","html-keyboard-response","252","2.0.0","1756479","37","item","8","exp_item","s4","sr","sp","<p class=""trial-stimulus"">_______ | ____ | ____ | the dogs | ______</p>","","","",""
+"513"," ","html-keyboard-response","253","2.0.0","1756993","37","item","8","exp_item","s5","sr","sp","<p class=""trial-stimulus"">_______ | ____ | ____ | ________ | smiles</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who smiles?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cat</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dogs</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2048","F","html-keyboard-response","254","2.0.0","1759551","37","question","8","exp_item","","sr","sp","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who smiles?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cat</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dogs</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","f","F","0"
+"774"," ","html-keyboard-response","255","2.0.0","1760839","37","item","8","exp_item","s0","or","sp","<p class=""trial-stimulus"">_______ | ____ | ________ | ___ | ______</p>","","","",""
+"713"," ","html-keyboard-response","256","2.0.0","1761553","37","item","8","exp_item","s1","or","sp","<p class=""trial-stimulus"">The cat | ____ | ________ | ___ | ______</p>","","","",""
+"454"," ","html-keyboard-response","257","2.0.0","1762008","37","item","8","exp_item","s2","or","sp","<p class=""trial-stimulus"">_______ | that | ________ | ___ | ______</p>","","","",""
+"575"," ","html-keyboard-response","258","2.0.0","1762585","37","item","8","exp_item","s3","or","sp","<p class=""trial-stimulus"">_______ | ____ | the dogs | ___ | ______</p>","","","",""
+"526"," ","html-keyboard-response","259","2.0.0","1763112","37","item","8","exp_item","s4","or","sp","<p class=""trial-stimulus"">_______ | ____ | ________ | hug | ______</p>","","","",""
+"590"," ","html-keyboard-response","260","2.0.0","1763703","37","item","8","exp_item","s5","or","sp","<p class=""trial-stimulus"">_______ | ____ | ________ | ___ | smiles</p>","false","","",""
+"1360"," ","html-keyboard-response","262","2.0.0","1765569","37","item","4","exp_item","s0","or","pp","<p class=""trial-stimulus"">__________ | ____ | __________ | ______ | ___</p>","","","",""
+"629"," ","html-keyboard-response","263","2.0.0","1766199","37","item","4","exp_item","s1","or","pp","<p class=""trial-stimulus"">The zebras | ____ | __________ | ______ | ___</p>","","","",""
+"535"," ","html-keyboard-response","264","2.0.0","1766735","37","item","4","exp_item","s2","or","pp","<p class=""trial-stimulus"">__________ | that | __________ | ______ | ___</p>","","","",""
+"832"," ","html-keyboard-response","265","2.0.0","1767567","37","item","4","exp_item","s3","or","pp","<p class=""trial-stimulus"">__________ | ____ | the horses | ______ | ___</p>","","","",""
+"801"," ","html-keyboard-response","266","2.0.0","1768368","37","item","4","exp_item","s4","or","pp","<p class=""trial-stimulus"">__________ | ____ | __________ | follow | ___</p>","","","",""
+"1719"," ","html-keyboard-response","267","2.0.0","1770088","37","item","4","exp_item","s5","or","pp","<p class=""trial-stimulus"">__________ | ____ | __________ | ______ | run</p>","false","","",""
+"822"," ","html-keyboard-response","269","2.0.0","1771424","37","item","7","exp_item","s0","sr","sp","<p class=""trial-stimulus"">_______ | ____ | ______ | ________ | _____</p>","","","",""
+"687"," ","html-keyboard-response","270","2.0.0","1772111","37","item","7","exp_item","s1","sr","sp","<p class=""trial-stimulus"">The dog | ____ | ______ | ________ | _____</p>","","","",""
+"600"," ","html-keyboard-response","271","2.0.0","1772711","37","item","7","exp_item","s2","sr","sp","<p class=""trial-stimulus"">_______ | that | ______ | ________ | _____</p>","","","",""
+"703"," ","html-keyboard-response","272","2.0.0","1773415","37","item","7","exp_item","s3","sr","sp","<p class=""trial-stimulus"">_______ | ____ | pushes | ________ | _____</p>","","","",""
+"1169"," ","html-keyboard-response","273","2.0.0","1774585","37","item","7","exp_item","s4","sr","sp","<p class=""trial-stimulus"">_______ | ____ | ______ | the cats | _____</p>","","","",""
+"502"," ","html-keyboard-response","274","2.0.0","1775089","37","item","7","exp_item","s5","sr","sp","<p class=""trial-stimulus"">_______ | ____ | ______ | ________ | cries</p>","false","","",""
+"1728"," ","html-keyboard-response","276","2.0.0","1777319","37","item","2","fill_item","s0","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | _______ | _____</p>","","","",""
+"656"," ","html-keyboard-response","277","2.0.0","1777975","37","item","2","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The chef | ___ | _____ | _______ | _____</p>","","","",""
+"544"," ","html-keyboard-response","278","2.0.0","1778519","37","item","2","fill_item","s2","sr","ss","<p class=""trial-stimulus"">________ | who | _____ | _______ | _____</p>","","","",""
+"615"," ","html-keyboard-response","279","2.0.0","1779135","37","item","2","fill_item","s3","sr","ss","<p class=""trial-stimulus"">________ | ___ | grabs | _______ | _____</p>","","","",""
+"896"," ","html-keyboard-response","280","2.0.0","1780031","37","item","2","fill_item","s4","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | the box | _____</p>","","","",""
+"655"," ","html-keyboard-response","281","2.0.0","1780687","37","item","2","fill_item","s5","sr","ss","<p class=""trial-stimulus"">________ | ___ | _____ | _______ | jumps</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the chef scream?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2369","F","html-keyboard-response","282","2.0.0","1783559","37","question","2","fill_item","","sr","ss","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the chef scream?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","f","F","0"
+"1368"," ","html-keyboard-response","283","2.0.0","1785439","37","item","4","exp_item","s0","or","ps","<p class=""trial-stimulus"">__________ | ____ | _________ | _______ | ___</p>","","","",""
+"560"," ","html-keyboard-response","284","2.0.0","1786001","37","item","4","exp_item","s1","or","ps","<p class=""trial-stimulus"">The zebras | ____ | _________ | _______ | ___</p>","","","",""
+"589"," ","html-keyboard-response","285","2.0.0","1786591","37","item","4","exp_item","s2","or","ps","<p class=""trial-stimulus"">__________ | that | _________ | _______ | ___</p>","","","",""
+"1000"," ","html-keyboard-response","286","2.0.0","1787591","37","item","4","exp_item","s3","or","ps","<p class=""trial-stimulus"">__________ | ____ | the horse | _______ | ___</p>","","","",""
+"905"," ","html-keyboard-response","287","2.0.0","1788496","37","item","4","exp_item","s4","or","ps","<p class=""trial-stimulus"">__________ | ____ | _________ | follows | ___</p>","","","",""
+"1630"," ","html-keyboard-response","288","2.0.0","1790128","37","item","4","exp_item","s5","or","ps","<p class=""trial-stimulus"">__________ | ____ | _________ | _______ | run</p>","false","","",""
+"774"," ","html-keyboard-response","290","2.0.0","1791416","37","item","8","exp_item","s0","or","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | ____ | ______</p>","","","",""
+"622"," ","html-keyboard-response","291","2.0.0","1792039","37","item","8","exp_item","s1","or","ss","<p class=""trial-stimulus"">The cat | ____ | _______ | ____ | ______</p>","","","",""
+"625"," ","html-keyboard-response","292","2.0.0","1792665","37","item","8","exp_item","s2","or","ss","<p class=""trial-stimulus"">_______ | that | _______ | ____ | ______</p>","","","",""
+"614"," ","html-keyboard-response","293","2.0.0","1793280","37","item","8","exp_item","s3","or","ss","<p class=""trial-stimulus"">_______ | ____ | the dog | ____ | ______</p>","","","",""
+"742"," ","html-keyboard-response","294","2.0.0","1794023","37","item","8","exp_item","s4","or","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | hugs | ______</p>","","","",""
+"1312"," ","html-keyboard-response","295","2.0.0","1795335","37","item","8","exp_item","s5","or","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | ____ | smiles</p>","false","","",""
+"710"," ","html-keyboard-response","297","2.0.0","1796551","37","item","13","fill_item","s0","sr","ss","<p class=""trial-stimulus"">_________ | ___ | _____ | __________ | ______</p>","","","",""
+"601"," ","html-keyboard-response","298","2.0.0","1797153","37","item","13","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The woman | ___ | _____ | __________ | ______</p>","","","",""
+"606"," ","html-keyboard-response","299","2.0.0","1797759","37","item","13","fill_item","s2","sr","ss","<p class=""trial-stimulus"">_________ | who | _____ | __________ | ______</p>","","","",""
+"495"," ","html-keyboard-response","300","2.0.0","1798255","37","item","13","fill_item","s3","sr","ss","<p class=""trial-stimulus"">_________ | ___ | burns | __________ | ______</p>","","","",""
+"904"," ","html-keyboard-response","301","2.0.0","1799159","37","item","13","fill_item","s4","sr","ss","<p class=""trial-stimulus"">_________ | ___ | _____ | the letter | ______</p>","","","",""
+"952"," ","html-keyboard-response","302","2.0.0","1800112","37","item","13","fill_item","s5","sr","ss","<p class=""trial-stimulus"">_________ | ___ | _____ | __________ | leaves</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the woman leave?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"1742","J","html-keyboard-response","303","2.0.0","1802367","37","question","13","fill_item","","sr","ss","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Does the woman leave?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>No</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>Yes</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","j","J","0"
+"805"," ","html-keyboard-response","304","2.0.0","1803679","37","item","7","exp_item","s0","or","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | ______ | _____</p>","","","",""
+"584"," ","html-keyboard-response","305","2.0.0","1804264","37","item","7","exp_item","s1","or","ss","<p class=""trial-stimulus"">The dog | ____ | _______ | ______ | _____</p>","","","",""
+"528"," ","html-keyboard-response","306","2.0.0","1804792","37","item","7","exp_item","s2","or","ss","<p class=""trial-stimulus"">_______ | that | _______ | ______ | _____</p>","","","",""
+"687"," ","html-keyboard-response","307","2.0.0","1805480","37","item","7","exp_item","s3","or","ss","<p class=""trial-stimulus"">_______ | ____ | the cat | ______ | _____</p>","","","",""
+"478"," ","html-keyboard-response","308","2.0.0","1805959","37","item","7","exp_item","s4","or","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | pushes | _____</p>","","","",""
+"447"," ","html-keyboard-response","309","2.0.0","1806407","37","item","7","exp_item","s5","or","ss","<p class=""trial-stimulus"">_______ | ____ | _______ | ______ | cries</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who cries?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dog</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cat</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"2079","F","html-keyboard-response","310","2.0.0","1809000","37","question","7","exp_item","","or","ss","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who cries?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dog</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cat</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","f","F","0"
+"1093"," ","html-keyboard-response","311","2.0.0","1810601","37","item","8","exp_item","s0","or","ps","<p class=""trial-stimulus"">________ | ____ | _______ | ____ | _____</p>","","","",""
+"606"," ","html-keyboard-response","312","2.0.0","1811207","37","item","8","exp_item","s1","or","ps","<p class=""trial-stimulus"">The cats | ____ | _______ | ____ | _____</p>","","","",""
+"520"," ","html-keyboard-response","313","2.0.0","1811729","37","item","8","exp_item","s2","or","ps","<p class=""trial-stimulus"">________ | that | _______ | ____ | _____</p>","","","",""
+"815"," ","html-keyboard-response","314","2.0.0","1812544","37","item","8","exp_item","s3","or","ps","<p class=""trial-stimulus"">________ | ____ | the dog | ____ | _____</p>","","","",""
+"695"," ","html-keyboard-response","315","2.0.0","1813241","37","item","8","exp_item","s4","or","ps","<p class=""trial-stimulus"">________ | ____ | _______ | hugs | _____</p>","","","",""
+"894"," ","html-keyboard-response","316","2.0.0","1814136","37","item","8","exp_item","s5","or","ps","<p class=""trial-stimulus"">________ | ____ | _______ | ____ | smile</p>","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who smiles?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dog</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cats</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","",""
+"1593","J","html-keyboard-response","317","2.0.0","1816232","37","question","8","exp_item","","or","ps","<div class='container trial-question'>
+      <h2 class='trial-question-header'>Who smiles?</h2>
+      <div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The dog</h2>
+          <h2 class='trial-question-key'>F</h2>
+        </div>
+        <div class='container'>
+          <h2 class='trial-question-answer'>The cats</h2>
+          <h2 class='trial-question-key'>J</h2>
+        </div>
+      </div>
+    </div>","","j","J","0"
+"589"," ","html-keyboard-response","318","2.0.0","1817327","37","item","8","fill_item","s0","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _______ | __________ | _____</p>","","","",""
+"600"," ","html-keyboard-response","319","2.0.0","1817927","37","item","8","fill_item","s1","sr","ss","<p class=""trial-stimulus"">The singer | ___ | _______ | __________ | _____</p>","","","",""
+"505"," ","html-keyboard-response","320","2.0.0","1818433","37","item","8","fill_item","s2","sr","ss","<p class=""trial-stimulus"">__________ | who | _______ | __________ | _____</p>","","","",""
+"759"," ","html-keyboard-response","321","2.0.0","1819193","37","item","8","fill_item","s3","sr","ss","<p class=""trial-stimulus"">__________ | ___ | smashes | __________ | _____</p>","","","",""
+"471"," ","html-keyboard-response","322","2.0.0","1819665","37","item","8","fill_item","s4","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _______ | the guitar | _____</p>","","","",""
+"518"," ","html-keyboard-response","323","2.0.0","1820184","37","item","8","fill_item","s5","sr","ss","<p class=""trial-stimulus"">__________ | ___ | _______ | __________ | cries</p>","false","","",""
+"966"," ","html-keyboard-response","325","2.0.0","1821656","37","item","8","exp_item","s0","or","pp","<p class=""trial-stimulus"">________ | ____ | ________ | ___ | _____</p>","","","",""
+"679"," ","html-keyboard-response","326","2.0.0","1822336","37","item","8","exp_item","s1","or","pp","<p class=""trial-stimulus"">The cats | ____ | ________ | ___ | _____</p>","","","",""
+"496"," ","html-keyboard-response","327","2.0.0","1822833","37","item","8","exp_item","s2","or","pp","<p class=""trial-stimulus"">________ | that | ________ | ___ | _____</p>","","","",""
+"526"," ","html-keyboard-response","328","2.0.0","1823360","37","item","8","exp_item","s3","or","pp","<p class=""trial-stimulus"">________ | ____ | the dogs | ___ | _____</p>","","","",""
+"581"," ","html-keyboard-response","329","2.0.0","1823943","37","item","8","exp_item","s4","or","pp","<p class=""trial-stimulus"">________ | ____ | ________ | hug | _____</p>","","","",""
+"1089"," ","html-keyboard-response","330","2.0.0","1825033","37","item","8","exp_item","s5","or","pp","<p class=""trial-stimulus"">________ | ____ | ________ | ___ | smile</p>","false","","",""
+"638"," ","html-keyboard-response","332","2.0.0","1826175","37","item","7","exp_item","s0","or","ps","<p class=""trial-stimulus"">________ | ____ | _______ | ______ | ___</p>","","","",""
+"575"," ","html-keyboard-response","333","2.0.0","1826751","37","item","7","exp_item","s1","or","ps","<p class=""trial-stimulus"">The dogs | ____ | _______ | ______ | ___</p>","","","",""
+"793"," ","html-keyboard-response","334","2.0.0","1827545","37","item","7","exp_item","s2","or","ps","<p class=""trial-stimulus"">________ | that | _______ | ______ | ___</p>","","","",""
+"805"," ","html-keyboard-response","335","2.0.0","1828350","37","item","7","exp_item","s3","or","ps","<p class=""trial-stimulus"">________ | ____ | the cat | ______ | ___</p>","","","",""
+"785"," ","html-keyboard-response","336","2.0.0","1829137","37","item","7","exp_item","s4","or","ps","<p class=""trial-stimulus"">________ | ____ | _______ | pushes | ___</p>","","","",""
+"662"," ","html-keyboard-response","337","2.0.0","1829799","37","item","7","exp_item","s5","or","ps","<p class=""trial-stimulus"">________ | ____ | _______ | ______ | cry</p>","false","","",""
+"839"," ","html-keyboard-response","339","2.0.0","1831143","37","item","1","exp_item","s0","or","pp","<p class=""trial-stimulus"">__________ | ____ | __________ | _____ | ____</p>","","","",""
+"991"," ","html-keyboard-response","340","2.0.0","1832135","37","item","1","exp_item","s1","or","pp","<p class=""trial-stimulus"">The horses | ____ | __________ | _____ | ____</p>","","","",""
+"623"," ","html-keyboard-response","341","2.0.0","1832759","37","item","1","exp_item","s2","or","pp","<p class=""trial-stimulus"">__________ | that | __________ | _____ | ____</p>","","","",""
+"1233"," ","html-keyboard-response","342","2.0.0","1833992","37","item","1","exp_item","s3","or","pp","<p class=""trial-stimulus"">__________ | ____ | the zebras | _____ | ____</p>","","","",""
+"511"," ","html-keyboard-response","343","2.0.0","1834504","37","item","1","exp_item","s4","or","pp","<p class=""trial-stimulus"">__________ | ____ | __________ | chase | ____</p>","","","",""
+"479"," ","html-keyboard-response","344","2.0.0","1834985","37","item","1","exp_item","s5","or","pp","<p class=""trial-stimulus"">__________ | ____ | __________ | _____ | fall</p>","<div class='container trial-question'>
+    <h2 class='trial-question-header'>Who falls?</h2>
+    <div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>The zebras</h2>
+        <h2 class='trial-question-key'>F</h2>
+      </div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>The horses</h2>
+        <h2 class='trial-question-key'>J</h2>
+      </div>
+    </div>
+  </div>","","",""
+"1556","J","html-keyboard-response","345","2.0.0","1837047","37","question","1","exp_item","","or","pp","<div class='container trial-question'>
+    <h2 class='trial-question-header'>Who falls?</h2>
+    <div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>The zebras</h2>
+        <h2 class='trial-question-key'>F</h2>
+      </div>
+      <div class='container'>
+        <h2 class='trial-question-answer'>The horses</h2>
+        <h2 class='trial-question-key'>J</h2>
+      </div>
+    </div>
+  </div>","","j","J","0"
