@@ -197,7 +197,7 @@ summary(df_merged)
 #### Clause Effects Model
 ```{r Clause Effects Model}
 lm_clause <- df_merged %>%
-    filter(segment %in% c("S3", "S4")) %>%
+    filter(segment %in% c("S3", "S4", "S5")) %>%
     lmer(data = ., rt ~ clause_type + (1 | part_eng_pro) + (1 | part_eng_exp) + (1 | part_id))
 summary(lm_clause)
 ```
@@ -283,7 +283,7 @@ lm_clause_plot <- df_merged %>%
         staplewidth = 0.5,
         notch = TRUE,
         alpha = 0.5,
-        linewidth = 1
+        linewidth = 0.5
     ) +
     geom_rug(
         show.legend = FALSE,
@@ -297,13 +297,13 @@ lm_clause_plot <- df_merged %>%
     )
 lm_clause_plot
 
-ggsave(filename = "lm_clause_plot.svg", path = plots_path, height = 6, width = 5)
+ggsave(filename = "lm_clause_plot.svg", path = plots_path, height = 10, width = 10, unit = "cm")
 ```
 
 #### Number Effects Model
 ```{r Number Effects Model}
 lm_number <- df_merged %>%
-    filter(segment %in% c("S3", "S4")) %>%
+    filter(segment %in% c("S3", "S4", "S5")) %>%
     lmer(data = ., rt ~ clause_type * number + (1 | part_eng_exp) + (1 | part_eng_pro) + (1 | part_id))
 summary(lm_number)
 ```
