@@ -18,7 +18,7 @@ library(broom.mixed)
 #### Color Variables
 ```{r Setting Color Variables}
 accent_color <- "#354c7c"
-secondary_color <- "#354b7c2b"
+secondary_color <- "#D5A419"
 ```
 
 #### Path Variables
@@ -61,10 +61,10 @@ head(df_part)
 #### Cleaning Participant Data
 ```{r Cleaning Participant Data}
 df_part <- df_part %>%
-  select(part_experiment, part_id, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro, part_eng_onset_time) %>%
+  select(part_experiment, part_id, part_age, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro, part_eng_onset_time) %>%
   mutate(
     across(
-      c(part_experiment, part_id, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro),
+      c(part_experiment, part_id, part_age, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro),
       factor
     )
   ) %>%
@@ -156,22 +156,49 @@ iqr <- q3 - q1
 lower_limit <- q1 - iqr * 1.5
 upper_limit <- q3 + iqr * 1.5
 
+exp(lower_limit)
+exp(upper_limit)
+
+n_obs_pre <- nrow(df_clean)
+
 df_clean <- df_clean %>%
   filter(.$rt > lower_limit & .$rt < upper_limit)
 
-no_outlier_plot <- df_clean %>%
+n_obs_post <- nrow(df_clean)
+
+n_outliers <- n_obs_pre - n_obs_post
+n_outliers
+
+n_outliers * 100 / n_obs_pre
+```
+
+```{r Distribution Plot}
+distribution_plot <- df_clean %>%
   ggplot(aes(x = rt)) +
-  geom_histogram(aes(y = ..density..)) +
+  geom_histogram(
+    aes(y = ..density..),
+    fill = secondary_color
+  ) +
   stat_function(
     fun = dnorm,
     args = list(mean = mean(df_clean$rt), sd = sd(df_clean$rt)),
     linewidth = 1,
     color = accent_color
+  ) +
+  labs(
+    title = "RT Data Distribution",
+    x = "Reaction Times (log10)",
+    y = "Density"
   )
-no_outlier_plot
+distribution_plot
+
+ggsave(filename = "distribution_plot.svg", path = plots_path, height = 10, width = 15, unit = "cm")
 ```
 
 ```{r Normality Test}
+summary(df_clean$rt)
+sd(df_clean$rt)
+
 shapiro.test(df_clean$rt)
 
 qq_plot <- df_clean %>%
@@ -206,21 +233,21 @@ lm_clause_tidy <- lm_clause %>%
   filter(effect == "fixed") %>%
   mutate(
     estimate = exp(estimate),
+    code = case_when(
+      p.value < 0.001 ~ "***",
+      p.value < 0.01 ~ "**",
+      p.value < 0.05 ~ "*",
+      p.value > 0.05 ~ " "
+    ),
     p.value = case_when(
       p.value < 0.001 ~ "< 0.001",
       p.value < 0.01 ~ "< 0.01",
       p.value < 0.05 ~ "< 0.05",
-      p.value > 0.05 ~ "> 0.05",
+      p.value > 0.05 ~ as.character(round(p.value, 2))
     ),
     term = case_when(
       term == "(Intercept)" ~ "SR (Baseline)",
       term == "clause_typeOR" ~ "OR"
-    ),
-    code = case_when(
-      p.value == "< 0.001" ~ "***",
-      p.value == "< 0.01" ~ "**",
-      p.value == "< 0.05" ~ "*",
-      p.value == "> 0.05" ~ " "
     )
   )
 
@@ -312,11 +339,17 @@ lm_number_tidy <- lm_number %>%
   filter(effect == "fixed") %>%
   mutate(
     estimate = exp(estimate),
+    code = case_when(
+      p.value < 0.001 ~ "***",
+      p.value < 0.01 ~ "**",
+      p.value < 0.05 ~ "*",
+      p.value > 0.05 ~ " "
+    ),
     p.value = case_when(
       p.value < 0.001 ~ "< 0.001",
       p.value < 0.01 ~ "< 0.01",
       p.value < 0.05 ~ "< 0.05",
-      p.value > 0.05 ~ "> 0.05",
+      p.value > 0.05 ~ as.character(round(p.value, 2)),
     ),
     term = case_when(
       term == "(Intercept)" ~ "SR * SS (Baseline)",
@@ -327,12 +360,6 @@ lm_number_tidy <- lm_number %>%
       term == "clause_typeOR:numberPP" ~ "OR * PP",
       term == "clause_typeOR:numberSP" ~ "OR * SP",
       term == "clause_typeOR:numberPS" ~ "OR * PS",
-    ),
-    code = case_when(
-      p.value == "< 0.001" ~ "***",
-      p.value == "< 0.01" ~ "**",
-      p.value == "< 0.05" ~ "*",
-      p.value == "> 0.05" ~ " "
     )
   )
 
