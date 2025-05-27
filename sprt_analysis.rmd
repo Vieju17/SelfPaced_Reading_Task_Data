@@ -7,18 +7,29 @@ output: html_document
 
 ### 0. Setting Up
 #### Loading Libraries
+The relevant packages are loaded into the script. These are: 
+
+- **Tidyverse**, for piping functionality as well as all the other included packages  such as `ggplot2`.
+- **lmerTest**, for linear mixed models and *p*-values. 
+- **ggthemes**, for extended plot customization. 
+- **gt**, for table creation. 
+- **broom.mixed**, for processing mixed model output. 
+
 ```{r Importing Libraries, results=FALSE, message=FALSE}
 library(tidyverse)
 library(lmerTest)
 library(ggthemes)
 library(gt)
 library(broom.mixed)
+library(ggdist)
 ```
 
 #### Color Variables
 ```{r Setting Color Variables}
 accent_color <- "#354c7c"
 secondary_color <- "#D5A419"
+
+plot_colors <- c("#FF9671", "#FF6F91", "#D65DB1", "#845EC2")
 ```
 
 #### Path Variables
@@ -27,7 +38,7 @@ tables_path <- "./images/tables/"
 plots_path <- "./images/plots/"
 ```
 
-#### Setting DefaultPlot Theme
+#### Setting Default Plot Theme
 ```{r Setting Default Plot Theme}
 theme_set(
   theme_calc(
@@ -40,8 +51,8 @@ theme_set(
       plot.background = element_rect(linewidth = 0),
       strip.background = element_rect(fill = accent_color, color = accent_color),
       strip.text = element_text(color = "white", face = "bold"),
-      axis.title.x = element_text(face = "bold", margin = margin(t = 10)),
-      axis.title.y = element_text(face = "bold", margin = margin(r = 10)),
+      axis.title.x = element_text(size = 10, face = "bold", margin = margin(t = 10)),
+      axis.title.y = element_text(size = 10, face = "bold", margin = margin(r = 10)),
       axis.line = element_line(color = accent_color, linewidth = 1),
       axis.ticks = element_blank(),
       legend.title = element_text(face = "bold")
@@ -51,14 +62,16 @@ theme_set(
 
 ### 1. Participant Data
 #### Importing Participant Data
+When importing participant data, names and email addresses are deleted to maintain anonymity. 
 ```{r Importing Participant Data}
 df_part <- read.csv("./data/part_data.csv")
 df_part$part_name <- NULL
 df_part$part_mail <- NULL
-head(df_part)
+summary(df_part)
 ```
 
 #### Cleaning Participant Data
+The relevant variables from the participant data set are selected. 
 ```{r Cleaning Participant Data}
 df_part <- df_part %>%
   select(part_experiment, part_id, part_age, part_lang, part_impaired., part_abroad, part_certificate, part_cat_exp, part_cat_pro, part_spa_exp, part_spa_pro, part_eng_exp, part_eng_pro, part_eng_onset_time) %>%
@@ -74,24 +87,25 @@ df_part <- df_part %>%
 
 df_part$part_experiment <- NULL
 
-summary(df_part)
+glimpse(df_part)
 ```
 
 ### 2. Task Data
 #### Importing Task Data
+An example data set is imported to check the state of all the variables. 
 ```{r Importing Example of Task Data}
 df_example <- read.csv("./data/32.csv")
-head(df_example)
+glimpse(df_example)
 ```
 
 ```{r Importing Task Data}
 df_raw <- reduce(
   list(
-    select(read.csv("./data/29.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt),
-    select(read.csv("./data/31.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt),
-    select(read.csv("./data/32.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt),
-    select(read.csv("./data/34.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt),
-    select(read.csv("./data/37.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt)
+    select(read.csv("./data/29.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct_answer, part_answer, correct),
+    select(read.csv("./data/31.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct_answer, part_answer, correct),
+    select(read.csv("./data/32.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct_answer, part_answer, correct),
+    select(read.csv("./data/34.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct_answer, part_answer, correct),
+    select(read.csv("./data/37.csv"), part_id, task, item_number, item_type, clause_type, number, segment, rt, correct_answer, part_answer, correct)
   ),
   rbind
 )
@@ -102,7 +116,7 @@ glimpse(df_raw)
 ```{r Cleaning Task Data}
 df_clean <- df_raw %>%
   arrange(part_id) %>%
-  filter(.$item_type == "exp_item" & .$task == "item" & segment != "s0") %>%
+  filter(.$item_type == "exp_item" & .$segment != "s0") %>%
   mutate(
     across(
       c(task, item_type, part_id),
@@ -112,7 +126,9 @@ df_clean <- df_raw %>%
     clause_type = factor(clause_type, levels = c("sr", "or"), labels = c("SR", "OR")),
     number = factor(number, levels = c("ss", "pp", "sp", "ps"), labels = c("SS", "PP", "SP", "PS")),
     matching = factor(ifelse(number == "SS" | number == "PP", "match", "mismatch"), labels = c("Match", "Mismatch")),
-    segment = factor(segment, labels = c("S1", "S2", "S3", "S4", "S5")),
+    segment = factor(segment, labels = c("Q", "S1", "S2", "S3", "S4", "S5")),
+    part_answer = tolower(part_answer),
+    correct = ifelse(correct_answer == part_answer, 1, 0)
   ) %>%
   relocate(matching, .after = number) %>%
   droplevels()
@@ -162,8 +178,20 @@ exp(upper_limit)
 
 n_obs_pre <- nrow(df_clean)
 
+set_wrong_answer <- function(df) {
+  for (i in seq_len(nrow(df))) {
+    if (df$correct[i] == 0) {
+      start_row <- max(1, i - 5)
+      df$correct[start_row:i] <- 0
+    }
+  }
+  return(df)
+}
+
+df_clean <- set_wrong_answer(df_clean)
+
 df_clean <- df_clean %>%
-  filter(.$rt > lower_limit & .$rt < upper_limit)
+  filter(.$rt > lower_limit & .$rt < upper_limit & correct == 1)
 
 n_obs_post <- nrow(df_clean)
 
@@ -189,11 +217,10 @@ distribution_plot <- df_clean %>%
   labs(
     title = "RT Data Distribution",
     x = "Reaction Times (log10)",
-    y = "Density"
+    y = element_blank()
   )
-distribution_plot
 
-ggsave(filename = "distribution_plot.svg", path = plots_path, height = 10, width = 15, unit = "cm")
+ggsave(filename = "distribution_plot.svg", path = plots_path, height = 7, width = 12, unit = "cm")
 ```
 
 ```{r Normality Test}
@@ -246,10 +273,12 @@ lm_clause_tidy <- lm_clause %>%
       p.value > 0.05 ~ as.character(round(p.value, 2)),
     ),
     term = case_when(
-      term == "(Intercept)" ~ "SR (Baseline)",
+      term == "(Intercept)" ~ "SR",
       term == "clause_typeOR" ~ "OR",
     )
   )
+
+lm_clause_tidy$estimate <- ifelse(lm_clause_tidy$term != "SR", lm_clause_tidy$estimate[1] * lm_clause_tidy$estimate, lm_clause_tidy$estimate)
 
 lm_clause_tidy
 ```
@@ -259,7 +288,7 @@ lm_clause_table <- lm_clause_tidy %>%
   gt() %>%
   cols_hide(columns = c(effect, group, df)) %>%
   tab_options(
-    table.width = 565,
+    table.width = 453.5,
     table.font.names = "Times",
     table.font.size = 12,
     table.border.top.width = 0,
@@ -270,12 +299,12 @@ lm_clause_table <- lm_clause_tidy %>%
     column_labels.background.color = accent_color
   ) %>%
   tab_header(
-    title = md("**1st Linear Mixed Effects Model Output**"),
+    title = md("**1st LME Model Output**"),
     subtitle = md("**Effects of *Clause Type* on RTs**")
   ) %>%
   cols_label(
     term = "Condition",
-    estimate = "Estimate (ms)",
+    estimate = "Predicted Mean RTs (ms)",
     std.error = "Std. Error",
     statistic = md("*t*-value"),
     p.value = md("*p*-value"),
@@ -317,7 +346,7 @@ lm_number_tidy <- lm_number %>%
       p.value > 0.05 ~ as.character(round(p.value, 2)),
     ),
     term = case_when(
-      term == "(Intercept)" ~ "SR * SS (Baseline)",
+      term == "(Intercept)" ~ "SR * SS",
       term == "clause_typeOR" ~ "OR * SS",
       term == "numberPP" ~ "SR * PP",
       term == "numberSP" ~ "SR * SP",
@@ -328,6 +357,8 @@ lm_number_tidy <- lm_number %>%
     )
   )
 
+lm_number_tidy$estimate <- ifelse(lm_number_tidy$term != "SR * SS", lm_number_tidy$estimate[1] * lm_number_tidy$estimate, lm_number_tidy$estimate)
+
 lm_number_tidy
 ```
 
@@ -336,7 +367,7 @@ lm_number_table <- lm_number_tidy %>%
   gt() %>%
   cols_hide(columns = c(effect, group, df)) %>%
   tab_options(
-    table.width = 565,
+    table.width = 453.5,
     table.font.names = "Times",
     table.font.size = 12,
     table.border.top.width = 0,
@@ -347,12 +378,12 @@ lm_number_table <- lm_number_tidy %>%
     column_labels.background.color = accent_color
   ) %>%
   tab_header(
-    title = md("**2nd Linear Mixed Effects Model Output**"),
+    title = md("**2nd LME Model Output**"),
     subtitle = md("**Effects of Interaction *Number* * *Clause Type* on RTs**")
   ) %>%
   cols_label(
     term = "Condition",
-    estimate = "Estimate (ms)",
+    estimate = "Predicted Mean RTs (ms)",
     std.error = "Std. Error",
     statistic = md("*t*-value"),
     p.value = md("*p*-value"),
@@ -366,13 +397,14 @@ lm_number_table <- lm_number_tidy %>%
 lm_number_table
 gtsave(lm_number_table, filename = "number_table.png", path = tables_path)
 ```
+
 #### Clause Effects Plot
 ```{r Clause Effects Plot}
-lm_clause_plot <- df_merged %>%
+clause_boxplot <- df_merged %>%
   filter(segment %in% c("S3", "S4")) %>%
   ggplot(
     aes(
-      y = exp(rt),
+      y = rt,
       x = clause_type,
       color = clause_type,
       fill = clause_type
@@ -387,26 +419,73 @@ lm_clause_plot <- df_merged %>%
   ) +
   geom_rug(
     show.legend = FALSE,
-    sides = "l"
+    sides = "l",
+    alpha = 0.5
   ) +
+  # coord_cartesian(ylim = c(300, 3100)) +
   labs(
     title = "Clause Type Effects on RC RTs",
-    subtitle = "Data from Segments 3 and 4",
     x = "Clause Type",
-    y = "Reaction Times (ms)"
+    y = "Reaction Times (log10)"
   )
-lm_clause_plot
 
-ggsave(filename = "lm_clause_plot.svg", path = plots_path, height = 10, width = 10, unit = "cm")
+ggsave(filename = "clause_boxplot.svg", path = plots_path, height = 12, width = 12, unit = "cm")
 ```
+
+```{r Raincloud Clause Plot}
+clause_raincloud <- df_merged %>%
+  filter(segment %in% c("S3", "S4")) %>%
+  ggplot(
+    aes(
+      x = rt,
+      y = clause_type,
+      color = clause_type,
+      fill = clause_type
+    )
+  ) +
+  geom_jitter(
+    height = 0.2,
+    alpha = 0.25,
+    size = 0.8
+  ) +
+  stat_slab(
+    position = position_nudge(y = 0.15),
+    height = 0.4
+  ) +
+  geom_boxplot(
+    alpha = 0.5,
+    width = 0.2,
+    notch = TRUE,
+    notchwidth = 0.5,
+    outliers = FALSE,
+    staplewidth = 0.5
+  ) +
+  labs(
+    title = "RTs by Clause Type",
+    y = element_blank(),
+    x = "Reaction Times (log10)"
+  ) +
+  theme(
+    legend.position = "none"
+  ) +
+  scale_fill_manual(
+    values = plot_colors
+  ) +
+  scale_color_manual(
+    values = plot_colors
+  )
+
+ggsave(filename = "clause_raincloud.svg", path = plots_path, height = 10, width = 14, unit = "cm")
+```
+
 
 #### Number Effects Plot
 ```{r Number Effects Plot}
-lm_number_plot <- df_merged %>%
-  filter(clause_type == "OR") %>%
+number_lineplot <- df_merged %>%
+  filter(clause_type == "OR" & segment != "Q") %>%
   ggplot(
     aes(
-      y = exp(rt),
+      y = rt,
       x = segment,
       color = number,
       group = number
@@ -430,7 +509,7 @@ lm_number_plot <- df_merged %>%
     sides = "l",
     alpha = 0.5
   ) +
-  coord_cartesian(ylim = c(600, 1600)) +
+  coord_cartesian(ylim = c(6, 7.5)) +
   scale_shape_manual(
     values = c(21, 22, 23, 24)
   ) +
@@ -444,22 +523,70 @@ lm_number_plot <- df_merged %>%
     )
   ) +
   labs(
-    title = "Number Effect on OR RTs by Segment",
+    title = "Number Effects on OR RTs by Segment",
     x = "Segments",
-    y = "Reaction Times (ms)"
+    y = "Reaction Times (log10)"
   ) +
   guides(
-    color = guide_legend("Number"),
-    shape = guide_legend("Number")
+    color = guide_legend(NULL, ncol = 2, nrow = 2),
+    shape = guide_legend(NULL, ncol = 2, nrow = 2)
   ) +
   theme(
-    legend.position = c(0.11, 0.84),
+    legend.position = c(0.2, 0.89),
     legend.box.background = element_rect(linewidth = 1, color = accent_color, linetype = "solid"),
     legend.text = element_text(size = 11),
     legend.title = element_text(size = 11)
   ) +
+  scale_color_manual(
+    values = plot_colors
+  ) +
   facet_wrap(~matching, dir = "v")
-lm_number_plot
 
-ggsave(filename = "lm_number_segment_plot.svg", path = plots_path, height = 15, width = 15, units = "cm")
+ggsave(filename = "number_lineplot.svg", path = plots_path, height = 12, width = 12, units = "cm")
+```
+
+```{r Raincloud Number Plot}
+number_raincloud <- df_merged %>%
+  filter(segment %in% c("S3", "S4") & clause_type == "OR") %>%
+  ggplot(
+    aes(
+      x = rt,
+      y = number,
+      color = number,
+      fill = number
+    )
+  ) +
+  geom_jitter(
+    height = 0.2,
+    alpha = 0.25,
+    size = 0.8
+  ) +
+  stat_slab(
+    position = position_nudge(y = 0.15),
+    height = 0.4
+  ) +
+  geom_boxplot(
+    alpha = 0.5,
+    width = 0.2,
+    notch = TRUE,
+    notchwidth = 0.5,
+    outliers = FALSE,
+    staplewidth = 0.5
+  ) +
+  labs(
+    title = "OR RTs by Number",
+    y = element_blank(),
+    x = "Reaction Times (log10)"
+  ) +
+  theme(
+    legend.position = "none"
+  ) +
+  scale_fill_manual(
+    values = plot_colors
+  ) +
+  scale_color_manual(
+    values = plot_colors
+  )
+
+ggsave(filename = "number_raincloud.svg", path = plots_path, height = 10, width = 14, unit = "cm")
 ```
