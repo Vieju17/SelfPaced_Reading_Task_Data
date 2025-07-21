@@ -1,0 +1,13 @@
+part_id,part_experiment,part_age,part_lang,part_impaired ,part_abroad,part_certificate,part_cat_exp,part_cat_pro,part_eng_exp,part_eng_pro,part_spa_exp,part_spa_pro,part_eng_onset_method,part_eng_onset_time,Status,part_date
+35,Practicum,18 - 25,"Catalan, Spanish",No,Yes,C1 (Advanced),1h - 3h,< 1h,> 5h,1h - 3h,> 5h,> 5h,At school,9,Accepted,
+34,TFG,18 - 25,"Catalan, Spanish",No,No,B2 (First),1h - 3h,1h - 3h,3h - 5h,3h - 5h,3h - 5h,3h - 5h,At school,6,Accepted,"May 19, 2025 11:00 (GMT+2) → 12:00"
+22,Pilot,26 - 30,"Catalan, English, Spanish",No,No,B2 (First),< 1h,< 1h,1h - 3h,1h - 3h,> 5h,> 5h,At school,5,Accepted,
+21,Pilot,26 - 30,"Catalan, Spanish",No,No,C2 (Proficiency),1h - 3h,1h - 3h,> 5h,> 5h,> 5h,> 5h,At school,6,Accepted,
+20,Pilot,18 - 25,"Catalan, Spanish",No,No,B2 (First),< 1h,< 1h,< 1h,< 1h,> 5h,> 5h,At school,8,Accepted,
+33,Practicum,18 - 25,"Catalan, English, Spanish",No,Yes,C1 (Advanced),< 1h,< 1h,> 5h,3h - 5h,> 5h,> 5h,At home,0,Scheduled,"May 22, 2025 11:30 (GMT+2) → 12:30"
+27,Pilot,18 - 25,"Catalan, Spanish",No,No,C2 (Proficiency),> 5h,> 5h,1h - 3h,1h - 3h,> 5h,> 5h,At school,3,Scheduled,
+26,Pilot,18 - 25,"Catalan, Spanish",No,Yes,C1 (Advanced),> 5h,> 5h,1h - 3h,< 1h,3h - 5h,3h - 5h,At school,4,Scheduled,
+37,TFG,26 - 30,"Catalan, Spanish",No,No,C1 (Advanced),1h - 3h,1h - 3h,> 5h,1h - 3h,> 5h,> 5h,At home,17,Test Done,"May 15, 2025 13:00 (GMT+2) → 14:00"
+32,TFG,18 - 25,"Catalan, Spanish",No,No,C1 (Advanced),> 5h,> 5h,1h - 3h,1h - 3h,3h - 5h,3h - 5h,At school,6,Test Done,"April 28, 2025 10:00 (GMT+2)"
+31,TFG,18 - 25,"Catalan, Spanish",No,No,C1 (Advanced),1h - 3h,> 5h,1h - 3h,< 1h,3h - 5h,1h - 3h,At school,10,Test Done,"April 28, 2025 11:30 (GMT+2)"
+29,TFG,18 - 25,Spanish,No,No,C2 (Proficiency),< 1h,< 1h,> 5h,1h - 3h,> 5h,> 5h,At school,6,Test Done,"April 30, 2025 11:30 (GMT+2)"
